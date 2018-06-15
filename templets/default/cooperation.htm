@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="headBaseRefer.htm"/}
+    <link href="/css/common/swiper.min.css" rel="stylesheet">
+    <link href="/css/zt_industry.css?v=7" rel="stylesheet">
+</head>
+
+<body>
+    <div id="zt_home">
+        {dede:include filename="navBase.htm"/}
+        <div class="zt_content">
+            <div class="zt_content_left container-fluid">
+                {dede:type}
+                <h2>[field:typename/]</h2> {/dede:type}
+                <div class="zt_item_content_wrapper">
+                    <dl class="zt_dl ">
+                        {dede:channel}
+                        <li>
+                            - <a href="[field:typelink /]">[field:typename/]</a>
+                        </li>
+                        {/dede:channel}
+                    </dl>
+                </div>
+            </div>
+            <div class="zt_content_right">
+                <div class="zt_list_banner">
+                    <img data-src="../uploads/allimg/160409/1-1604092312030-L.jpg" class="swiper-lazy" alt="高温线性电源模块">
+                </div>
+                <!--面包屑-->
+                <div class="zt_crumbs_wrapper">
+                    <p class="zt_crumbs">
+                        {dede:field name='position'/}
+                    </p>
+                </div>
+                {dede:type}
+                <h2 class="zt_list_title">[field:typename/]</h2> {/dede:type}
+                <div>
+                    
+                    <div class="zt_product_wrapper_list container-fluid">
+                        {dede:channel }
+                        <div class="col-md-4">
+                            <div class="zt_indr_item">
+                                <a class="zt_link_list" href="[field:typelink /]">
+                                    <div class="zt_link_list_img">
+                                        <img src="[field:typeimg/]" alt="[field:title function='html2text(@me)'/]" /> 
+                                        <div class="zt_link_list_text zt_show_online">[field:typename/]</div>
+                                    </div>
+                               </a>
+                                
+                            </div>
+                        </div>
+                        {/dede:channel}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {dede:include filename="footBase.htm"/}
+    </div>
+    {dede:include filename="bottomBaseRefer.htm"/}
+    <script type="text/javascript" src="/js/zt_product_class_list.js"></script>
+</body>
+
+</html>

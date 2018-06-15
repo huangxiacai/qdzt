@@ -1,0 +1,1 @@
+<li><img src="[field:litpic/]" width="89" height="62"  data-img="[field:litpic/]" alt="[field:fulltitle/]"></li>

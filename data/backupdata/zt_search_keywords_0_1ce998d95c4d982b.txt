@@ -1,0 +1,2 @@
+INSERT INTO `zt_search_keywords` VALUES('1','地图','地图','2','0','1456836600','0','0');
+INSERT INTO `zt_search_keywords` VALUES('2','测试','测试','13','10','1456836767','0','0');

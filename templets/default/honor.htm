@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{dede:field.seotitle/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css?v=22" rel="stylesheet" >
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+{dede:include filename="headquote.htm"/}
+
+</head>
+<body class="culture-body">
+<!--头部文件  -->
+{dede:include filename="head.htm"/}
+<!--头部文件end  -->
+    <div class="inside-wrap">
+    	<div class="inside-tips w960">
+			<h1>{dede:type}[field:typename/]{/dede:type}</h1>
+    		<p class="fz16">聚焦科技之美</p>
+    		<p>以高素质团队和专业设备打造业界领先的传感器、混合集成电路产品</p>
+    		<a href="/" class="link link-inside"><img src="/images/sign09.png" width="44" height="44" class="png"></a>
+    	</div>
+    	<div class="path">
+            <div class="w960">
+                <h2 class="fl">{dede:type}[field:typename/]{/dede:type}</h2>
+                <p class="fr">
+                <a href="/" class="home"> </a><span class="sign"></span> {dede:field name='position'/}
+                </p>
+            </div>
+        </div>
+        <div class="inside-main honor-wrap">
+            <div class="w960">
+                <div class="honor-img">
+                    <div class="btn prev"><img src="/images/prev03.png" alt="上一页"></div>
+                    <div class="btn next"><img src="/images/next03.png" alt="下一页"></div>
+                    <div class="img"><img src="" width="635" height="444" alt=图片""></div>
+                    <div class="tips"></div>
+                    <div class="list">
+                        <ul>
+                        {dede:list  infolen='60' titlelen='28'}
+                        <li><img src="[field:litpic/]" width="89" height="62"  data-img="[field:litpic/]" alt="[field:fulltitle/]"></li>
+                        {/dede:list}  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{dede:include filename="footer.htm"/}
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/jquery1.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<script src="/js/headsearch.js"></script>
+<script src="/js/imgshow.js"></script>
+<script src="/js/honor_base.js"></script>
+</body>
+</html>

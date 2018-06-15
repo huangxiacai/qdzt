@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>解读加速度计用于导航的工作原理-加速度计用于导航的工作原理-青岛智腾微电子</title>
+<meta name="keywords" content="加速度计用于导航的工作原理" />
+<meta name="description" content="加速度计是按照惯性原理相对惯性空间工作的。加速度（即速度的变化率）本身很难直接测量，实际上现有的加速度计都是借助敏感质量变成力进行间接测量的。" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css" rel="stylesheet" >
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+<script src="/js/main.js"></script>
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery1.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<style>
+html,body{
+    position: relative;
+}
+</style>
+</head>
+<body class="products-body">
+<!--头部文件  -->
+<div class="header">
+<div class="header-top">
+    <div class="w960">
+        <p class="fl"><a href="/" target="_blank" style="color: #a8b5c7">青岛智腾微电子有限公司</a></p>
+        <div class="fr">
+            <a href="/" class="home">现场实录</a>
+            <p class="fl">|</p>
+            <a href="/contact-job/" class="email" target="_blank">人力资源</a>
+           <div class="wx"><a href="javascript:void(0);"  class="bb" id="wxs" ><img src="/images/wx2.png" width="39" height="39" class="png">
+            <div class="wx-box">
+                    <p class="ttt">扫扫二维码</p>
+                    <ul>
+                    <li>
+                        <img src="/images/zp.jpg" width="80" height="80" class="fl" alt="智腾微信公众号">
+                        <p>微信公众号</p>
+                    </li>
+                   </ul>
+                    </div></a>
+                </div>
+            <a href="http://weibo.com/" target="_blank" class="bb" title="新浪微博"><img src="/images/sina.png" width="39" height="39" class="png" alt="新浪微博"></a>
+            <a href="http://t.qq.com/" target="_blank" class="bb" title="腾讯微博"><img src="/images/qq.png" width="39" height="39" class="png" alt="腾讯微博"></a>
+            <form action="/plus/search.php" class="fl" method="post" name="search" id="sForm" target="_blank">
+                <div class="search">
+                    <div class="select">
+                        <p>搜索</p>
+                    </div>
+                    <input type="text" id="key"  name="keyword"  onKeyPress="if(event.keyCode==13){searchbtn();}">
+                    <input type="submit" value="" class="submit" id="btnsearch" onClick="searchbtn();">
+                </div>
+            </form>
+            <div class="language">
+                <p>中文</p>
+                <div class="language-list">
+                    <a href="/" target="_blank">中文</a>
+                    <a href="http://en.qdzitn.com" target="_blank">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-main">
+    <div class="w960">
+        <h1 class="logo fl"><a href="/"><img src="/images/logo.jpg"  class="fl" alt="智腾微电子"></a></h1>
+        <div class="nav">
+            <ul>
+                <li><a href="/" target="_blank">网站首页</a></li>
+                <li>
+                    <a href="/product/" target="_blank">产品展示</a>
+                    <div class="sign"></div>
+                    <div class="subnav product_subnav" style="left:-298px;">
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                 <div class="dd"><a href="/product-cgq/"  target="_blank" class="tit">传感器</a></div>
+                 <div class="dd"><a href="/product-cgq/278.html" class="user_split_string"  target="_blank">解读加速度计用于导航的</a></div>
+<div class="dd"><a href="/product-cgq/277.html" class="user_split_string"  target="_blank">高温石英加速度计</a></div>
+<div class="dd"><a href="/product-cgq/276.html" class="user_split_string"  target="_blank">高精度石英挠性加速度计</a></div>
+<div class="dd"><a href="/product-cgq/219.html" class="user_split_string"  target="_blank">LH20光纤陀螺捷联惯导</a></div>
+<div class="dd"><a href="/product-cgq/218.html" class="user_split_string"  target="_blank">LH22 MEMS惯性/卫星航向姿态</a></div>
+<div class="dd"><a href="/product-cgq/146.html" class="user_split_string"  target="_blank">石英挠性加速度传感器</a></div>
+<div class="dd"><a href="/product-cgq/111.html" class="user_split_string"  target="_blank">石英挠性伺服加速度传感</a></div>
+<div class="dd"><a href="/product-cgq/156.html" class="user_split_string"  target="_blank">T135石英加速度传感器</a></div>
+<div class="dd"><a href="/product-cgq/108.html" class="user_split_string"  target="_blank">三轴加速度传感器</a></div>
+<div class="dd"><a href="/product-cgq/112.html" class="user_split_string"  target="_blank">高精度光纤捷联惯导</a></div>
+<div class="dd"><a href="/product-cgq/113.html" class="user_split_string"  target="_blank">高精度定位定姿系统</a></div>
+<div class="dd"><a href="/product-cgq/154.html" class="user_split_string"  target="_blank">CZ3-X-Y压电加速度计</a></div>
+<div class="dd"><a href="/product-cgq/36.html" class="user_split_string"  target="_blank">内装式压电加速度计</a></div>
+<div class="dd"><a href="/product-cgq/107.html" class="user_split_string"  target="_blank">惯导用石英挠性加速度计</a></div>
+<div class="dd"><a href="/product-cgq/40.html" class="user_split_string"  target="_blank">测井用石英挠性加速度计</a></div>
+<div class="dd"><a href="/product-cgq/41.html" class="user_split_string"  target="_blank">红外光电液位传感器</a></div>
+
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                             <div class="dl">
+                 <div class="dd"><a href="/product-ccq/"  target="_blank" class="tit">存储器</a></div>
+                 <div class="dd"><a href="/product-ccq/145.html" class="user_split_string"  target="_blank">LHDS4GA高温存储器</a></div>
+<div class="dd"><a href="/product-ccq/138.html" class="user_split_string"  target="_blank">LDMF4GA高温存储器</a></div>
+<div class="dd"><a href="/product-ccq/137.html" class="user_split_string"  target="_blank">LHNF1GA高温存储器</a></div>
+<div class="dd"><a href="/product-ccq/121.html" class="user_split_string"  target="_blank">LHDS1GA高温存储器</a></div>
+<div class="dd"><a href="/product-ccq/52.html" class="user_split_string"  target="_blank">LDMF1GA高温存储器</a></div>
+<div class="dd"><a href="/product-ccq/51.html" class="user_split_string"  target="_blank">LHNF4GA高温存储器</a></div>
+
+                            </div>
+                             <div class="dl">
+                <div class="dd"><a href="/product-bhq/"  target="_blank" class="tit">变换器</a></div>
+                 <div class="dd"><a href="/product-bhq/139.html" class="user_split_string" target="_blank">JLH031高精度I/F变换器</a></div>
+<div class="dd"><a href="/product-bhq/135.html" class="user_split_string" target="_blank">JLH014MC型I/F变换器</a></div>
+<div class="dd"><a href="/product-bhq/140.html" class="user_split_string" target="_blank">JLH032高精度I/F转换器</a></div>
+<div class="dd"><a href="/product-bhq/136.html" class="user_split_string" target="_blank">JLH030高精度I/F变换器</a></div>
+<div class="dd"><a href="/product-bhq/133.html" class="user_split_string" target="_blank">JLH010高精度I/F变换器</a></div>
+<div class="dd"><a href="/product-bhq/122.html" class="user_split_string" target="_blank">IF/VF变换器</a></div>
+<div class="dd"><a href="/product-bhq/118.html" class="user_split_string" target="_blank">铂电阻温度变换器II型</a></div>
+<div class="dd"><a href="/product-bhq/117.html" class="user_split_string" target="_blank">单路振动变换器</a></div>
+
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                <div class="dd"><a href="/product-dymk/"  target="_blank" class="tit">电源模块</a></div>
+                 <div class="dd"><a href="/product-dymk/54.html" class="user_split_string" target="_blank">LH42094电源模块</a></div>
+<div class="dd"><a href="/product-dymk/55.html" class="user_split_string" target="_blank">LH42094-250电源模块</a></div>
+<div class="dd"><a href="/product-dymk/56.html" class="user_split_string" target="_blank">LH42095电源模块</a></div>
+<div class="dd"><a href="/product-dymk/57.html" class="user_split_string" target="_blank">LH42095-250电源模块</a></div>
+<div class="dd"><a href="/product-dymk/58.html" class="user_split_string" target="_blank">LH42117电源模块</a></div>
+<div class="dd"><a href="/product-dymk/59.html" class="user_split_string" target="_blank">LH42117-250电源模块</a></div>
+<div class="dd"><a href="/product-dymk/60.html" class="user_split_string" target="_blank">LH42118电源模块</a></div>
+<div class="dd"><a href="/product-dymk/61.html" class="user_split_string" target="_blank">LH42118-250电源模块</a></div>
+<div class="dd"><a href="/product-dymk/62.html" class="user_split_string" target="_blank">LHVR230电源模块</a></div>
+<div class="dd"><a href="/product-dymk/63.html" class="user_split_string" target="_blank">LHVR250电源模块</a></div>
+<div class="dd"><a href="/product-dymk/143.html" class="user_split_string" target="_blank">LM03000WD电源模块</a></div>
+<div class="dd"><a href="/product-dymk/144.html" class="user_split_string" target="_blank">LM04000WD电源模块</a></div>
+<div class="dd"><a href="/product-dymk/147.html" class="user_split_string" target="_blank">LM04070W电源模块</a></div>
+<div class="dd"><a href="/product-dymk/148.html" class="user_split_string" target="_blank">LM04220电源模块</a></div>
+<div class="dd"><a href="/product-dymk/149.html" class="user_split_string" target="_blank">LM04230WD电源模块</a></div>
+<div class="dd"><a href="/product-dymk/150.html" class="user_split_string" target="_blank">LM04240WD电源模块</a></div>
+
+                            </div>
+                        </div>
+                           <div class="pro-subnav-box">
+                            <div class="dl">
+                <div class="dd"><a href="/product-hhjcdl/"  target="_blank" class="tit">混合集成电路</a></div>
+                 <div class="dd"><a href="/product-hhjcdl/142.html" class="user_split_string" target="_blank">高精度温控调理电路</a></div>
+<div class="dd"><a href="/product-hhjcdl/141.html" class="user_split_string" target="_blank">电流/频率（I/F）转换电路</a></div>
+<div class="dd"><a href="/product-hhjcdl/134.html" class="user_split_string" target="_blank">三路集成互阻放大器</a></div>
+<div class="dd"><a href="/product-hhjcdl/132.html" class="user_split_string" target="_blank">数码控制AGC放大器</a></div>
+<div class="dd"><a href="/product-hhjcdl/131.html" class="user_split_string" target="_blank">温控调理混合集成电路</a></div>
+<div class="dd"><a href="/product-hhjcdl/106.html" class="user_split_string" target="_blank">FPGA采集SOC电路模块</a></div>
+<div class="dd"><a href="/product-hhjcdl/105.html" class="user_split_string" target="_blank">阵列感应测井仪电路模块</a></div>
+<div class="dd"><a href="/product-hhjcdl/104.html" class="user_split_string" target="_blank">测井三参数测量电路系统</a></div>
+<div class="dd"><a href="/product-hhjcdl/103.html" class="user_split_string" target="_blank">阵列感应电路系统</a></div>
+<div class="dd"><a href="/product-hhjcdl/102.html" class="user_split_string" target="_blank">偶极子声波测井仪电路</a></div>
+<div class="dd"><a href="/product-hhjcdl/101.html" class="user_split_string" target="_blank">MCU存储SOC电路模块</a></div>
+<div class="dd"><a href="/product-hhjcdl/65.html" class="user_split_string" target="_blank">200℃微扫成像极板电路</a></div>
+<div class="dd"><a href="/product-hhjcdl/64.html" class="user_split_string" target="_blank">175℃微扫成像极板电路</a></div>
+
+                            </div>
+                        </div>
+                         <div class="pro-subnav-box subnav-box-skill">
+                             <div class="dl">
+                <div class="dd"><a href="#" target="_blank" class="tit">技术支持</a></div>
+                <div class="dd"><a href="/download-jjfa/" target="_blank" >解决方案</a></div>
+                <div class="dd"><a href="/download-cpsc/" target="_blank" >资料下载</a></div>
+                <div class="dd"><a href="/download-xcsl/" target="_blank" >现场实录</a></div>
+                            </div>                      
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/about/" target="_blank">关于智腾</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="left:-22px;">
+                        <div class="list" style="padding-top:0">
+                            <ul>
+                            <li><a href='/about-gy/'  target="_blank">关于智腾</a></li><li><a href='/about-qywh/'  target="_blank">企业文化</a></li><li><a href='/about-qyzz/'  target="_blank">企业资质</a></li><li><a href='/about-qyry/'  target="_blank">企业荣誉</a></li><li><a href='/about-fzlc/'  target="_blank">发展历程</a></li><li><a href='/about-zlcl/'  target="_blank">质量策略</a></li>
+                            </ul>
+                        </div>
+                        <div class="intro">
+                            <h2>质量策略</h2>
+                            <a href="/about-zlcl/" class="fl" target="_blank"><img src="/images/tzz1.jpg" width="126" class="fl" alt="质量策略"></a>
+                            <div class="tips">
+                                <a href="/about-zlcl/" target="_blank" class="tit">智腾微电子质量策略</a>
+                                <span>追求品质，严格遵循宇航级别标准，达到国际...</span>
+                                <a href="/about-zlcl/" target="_blank"  class="btn">更多</a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="lists">
+                                <a href="/contact-lxwm/" target="_blank">联系方式</a>
+                                <a href="/contact-job/" target="_blank">人才招聘</a></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/download/" target="_blank">资源下载</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="left:-172px">
+                        <div class="list" style="height:178px">
+                            <ul>
+                            <li><div style="font-size:16px;">产品手册</div></li>
+                            <li><a href='/download-cpsc/cgq/'  target="_blank">传感器</a></li><li><a href='/download-cpsc/bhq/'  target="_blank">变换器</a></li><li><a href='/download-cpsc/hhjcdl/'  target="_blank">混合集成电路</a></li><li><a href='/download-cpsc/gwccq/'  target="_blank">存储器</a></li><li><a href='/download-cpsc/gwdy/'  target="_blank">电源模块</a></li>
+                            <li><div style="font-size:16px;"><a href="/download-jjfa/" target="_blank">解决方案</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="intro" style="height:212px">
+                            <h2>现场实录</h2>
+                            <div class="intro-main">
+                                <a href="/download-xcsl/" class="fl" target="_blank"><img src="/images/img22.jpg" width="93" height="62" class="fl" alt="现场实录"></a>
+                                <div class="r">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/news/" target="_blank">新闻资讯</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="left:-306px">
+                        <div class="list" style="height:178px">
+                            <ul>
+                            <li><a href='/news-gs/'  target="_blank">公司新闻</a></li><li><a href='/news-zyhd/'  target="_blank">重要活动</a></li><li><a href='/news-jszs/'  target="_blank">技术知识</a></li><li><a href='/news-jplw/'  target="_blank">精品论文</a></li><li><a href='/news-hyzx/'  target="_blank">行业资讯</a></li>
+                            </ul>
+                        </div>
+                        <div class="intro" style="height:212px">
+                            <h2>新闻资讯</h2>
+                            <div class="intro-main">
+                              
+                                <a href="/news/" class="fl" target="_blank"><img src="/images/sywh1.jpg" width="100" class="fl" alt="新闻"></a>
+                                <div class="r">
+                                <a href="/news-jplw/275.html" class="tit" target="_blank">不了解厚膜电路工艺特点</a>
+                                    <a href="/news-jplw/275.html" target="_blank">厚膜电路工艺是集成电路中的一种，已经广泛应...</a>
+                                    <span>2017.07</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/contact/" target="_blank">联系我们</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="right:0">
+                        <div class="list" style="height:178px">
+                            <ul>
+                            <li><a href="/contact/" target="_blank">联系方式</a></li>
+                            <li><a href="/contact-job/" target="_blank">加入我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="about-nav-img">
+                        <a href="/contact/" target="_blank">
+                            <img src="/images/img23.jpg" width="216" alt="联系我们">
+                            <p>电话：0532-58717256 </br>手机：139 5322 0560  </br>地址：青岛高新区锦业路1号A3座</p></a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/cooperation/" target="_blank" rel="nofollow">战略合作</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="right:0">
+                        <div class="list" style="padding-top:0">
+                            <ul>
+                             <li><a href="/cooperation/1.html" target="_blank">海纳百川</a></li>
+                                <li><a href="/cooperation/2.html" target="_blank">体系资源</a></li>
+                                <li><a href="/cooperation/3.html" target="_blank">技术资源</a></li>
+                                <li><a href="/cooperation/4.html" target="_blank">场地资源</a></li>
+                                <li><a href="/cooperation/5.html" target="_blank">经济资源</a></li>
+                                <li><a href="/cooperation/6.html" target="_blank">合作项目</a></li>
+                            </ul>
+                        </div>
+                        <div class="intro">
+                            <h2>战略合作</h2>
+                            <a href="/cooperation/" class="fl" target="_blank"><img src="/images/tzz1.jpg" width="126" class="fl" alt="战略合作"></a>
+                            <div class="tips">
+                                <a href="/cooperation/" target="_blank" class="tit">智腾微电子战略合作</a>
+                                <span>永葆创业激情 分享成长价值...</span>
+                                <a href="/cooperation/" target="_blank"  class="btn">更多</a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="/js/headsearch.js"></script>
+</div>
+<!--头部文件end  -->
+    <div class="inside-wrap">
+        <div class="inside-tips w960">
+            <h2>传感器</h2>
+            <p class="fz16">聚焦科技之美</p>
+            <p>通过坚持国际化道路和名配角战略，做强、做大、走远，成为微电子行业的百年老字号。 </p>
+            <a href="/product-cgq/" class="link link-inside"><img src="/images/sign09.png" width="44" height="44" class="png"></a>
+    	</div>
+    	<div class="path">
+            <div class="w960">
+                <h2 class="fl user_split_string">解读加速度计用于导航的工作原理</h2>
+                <p class="fr">
+                <a href="/" class="home"> </a><span class="sign"></span><a href='http://www.qdzitn.com/'>主页</a> > <a href='/product/'>产品展示</a> > <a href='/product-cgq/'>传感器</a> > 
+                <a href="#" class="user_split_string">解读加速度计用于导航的工作原理</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="inside-main honor-wrap">
+            <div class="w960">
+                <div class="honor-img">
+                    <div class="btn prev"><img src="/images/prev03.png"></div>
+                    <div class="btn next"><img src="/images/next03.png"></div>
+                    <div class="img"><img src="/uploads/allimg/170724/1-1FH41P2180-L.png" width="635" hight=“444” alt=""></div>
+                </div>
+				
+				
+        <div class="proinfo-tab">
+            <div class="w960">
+                <div class="tab-list">
+                    <ul>
+                        <li>产品介绍</li>
+                        <li>技术规格</li>
+                        <li>相关产品</li>
+                        <li>销售联系</li>
+                    </ul>
+                </div>
+                <div class="tab-box">
+                    <div class="tab-boxs tab-intro" style="line-height:25px;">
+                 <div class="intro"><p class="pl20"><span style="font-size:14px;">&nbsp; &nbsp; <a href="http://www.qdzitn.com/product-cgq/146.html">&nbsp; 加速度计</a>是按照惯性原理相对惯性空间工作的。加速度（即速度的变化率）本身很难直接测量，实际上现有的加速度计都是借助敏感质量变成力进行间接测量的。加速度计测量原理基于牛顿第二定律：作用与物体上的力等于该物体的质量乘以加速度。换句话说，加速度作用在敏感质量上形成惯性力，测量该惯性力，间接测量在体受到的加速度。在惯性空间加速度计无法区分惯性力和万有引力，因此加速度计的输出反映的是单位检测质量所受的惯性空间的合理，即惯性力和万有引力之和。惯性技术领域将单位敏感质量所售的力成为比力，因此加速度计也称作比力传感器。</span>
+<div style="text-align: center;">
+	<span style="font-size:14px;"><img alt="解读加速度计用于导航的工作原理" src="/uploads/allimg/170724/1-1FH41P250a3.png" style="width: 298px; height: 179px;" /></span></div>
+<span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;在地球表面，万有引力中地球引力占的比重最大。如果我们将地球重力加速度记为1g，则太阳引力场因其的加速度不大于1.4x10<sup>-7</sup>g，月球引力场因其的加速度不大于4x10<sup>-6</sup>g，金星引力场因其的加速度不大于3.7x10<sup>-8</sup>g，其他星球引力场引起的加速度更小。换句话说，在地球表面地球以外的天体引力场因其的加速度比地球引力场因其的加速度至少低6个数量级。故在一般应用中，对于加速度计测出的加速度只考虑地球重力场的影响，而忽略太阳、月亮和其他星球引力场的影响。<br />
+在运载提上安装加速度计用于导航制导时，当运载体运动变化时加速度计则敏感测量出载体相对惯性空间的加速度，经过一次积分运算即可得到运载体相对惯性空间的速度，经过二次积分运算可得到运载体相对惯性空间的运行距离，从而进行自主式导航和制导。</span><br />
+<br /> <br /> </p></div>
+                    </div>
+                    <div class="tab-boxs tab-table"></div>
+                    <div class="tab-boxs tab-download">
+                        <ul>
+						    <div id='tag307288f1cfc154acc30c6b1575f83358'>
+<li>
+                                <a href="/product-cgq/278.html" >
+                                    <div class="intro">
+                                        <p>解读加速度计用于导航的工作原理</p>
+                                        <span>2017-07-24</span>
+                                        <div class="sign"><div class="t"><img src="/uploads/allimg/170724/1-1FH41P2180-L.png"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/product-cgq/277.html" >
+                                    <div class="intro">
+                                        <p>高温石英加速度计</p>
+                                        <span>2017-07-24</span>
+                                        <div class="sign"><div class="t"><img src="/uploads/allimg/170724/1-1FH41KZ30-L.png"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/product-cgq/276.html" >
+                                    <div class="intro">
+                                        <p>高精度石英挠性加速度计</p>
+                                        <span>2017-07-24</span>
+                                        <div class="sign"><div class="t"><img src="/uploads/allimg/170724/1-1FH41K6210-L.png"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/product-cgq/146.html" >
+                                    <div class="intro">
+                                        <p>石英挠性加速度传感器</p>
+                                        <span>2017-07-11</span>
+                                        <div class="sign"><div class="t"><img src="/uploads/170711/1-1FG11J023293.png"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/product-cgq/156.html" >
+                                    <div class="intro">
+                                        <p>T135石英加速度传感器</p>
+                                        <span>2017-07-11</span>
+                                        <div class="sign"><div class="t"><img src="/uploads/170711/1-1FG11IP2K1.png"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/product-cgq/219.html" >
+                                    <div class="intro">
+                                        <p>LH20光纤陀螺捷联惯导</p>
+                                        <span>2017-07-11</span>
+                                        <div class="sign"><div class="t"><img src="/uploads/170711/1-1FG11I642625.png"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+    </div>
+
+                        </ul>
+                    </div>
+                    <div class="tab-boxs tab-contact">
+                        <div class="intro">
+                            <h2>销售联系： <em>158 1115 8102</em></h2>
+<p>青岛智腾微电子有限公司<br />地址：青岛高新区锦业路1号A3座<br />
+电话：+86-0532-68013919<br />传真：+86-0532-58717256-8018<br />
+邮件：<a href="mailto:sales@qdzitn.com">sales@qdzitn.com</a></p>
+                        </div>
+                        <div class="r">
+                            <img src="/images/img21.jpg" width="302" height="201" class="fl" alt="联系我们">
+                            <div class="tips">
+                                <p>联系智腾</p>
+                                <p class="en">Contact Us</p>
+                                <a href="/contact/" target="_blank">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="turn">
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                    <div class="turn-main">
+                        <p>上一篇：<a href='/product-cgq/277.html'>高温石英加速度计</a> </p>
+                        <p>下一篇：没有了 </p>
+                        <a href="/product-cgq/" class="back">返回</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="footer">  
+<div class="footer-t">
+	<div class="w960">
+		<div class="fpro-list">
+			<ul>
+				<li><a href="/product/" class="tit">产品中心</a></li>
+		        
+		        <li><a href='/product-cgq/'>传感器</a></li>
+		        
+		        <li><a href='/product-bhq/'>变换器</a></li>
+		        
+		        <li><a href='/product-hhjcdl/'>混合集成电路</a></li>
+		        
+		        <li><a href='/product-ccq/'>存储器</a></li>
+		        
+		        <li><a href='/product-dymk/'>电源模块</a></li>
+		        
+			</ul>
+		</div>
+		<div class="f-list">
+			<ul>
+				<li><a href="/download/" class="tit">资源下载</a></li>
+		        
+		        <li><a href='/download-cpsc/cgq/'>传感器</a></li>
+		        
+		        <li><a href='/download-cpsc/bhq/'>变换器</a></li>
+		        
+		        <li><a href='/download-cpsc/hhjcdl/'>混合集成电路</a></li>
+		        
+		        <li><a href='/download-cpsc/gwccq/'>存储器</a></li>
+		        
+		        <li><a href='/download-cpsc/gwdy/'>电源模块</a></li>
+		        
+               <li><a href='/download-xcsl/'>现场实录</a></li>
+			   <li><a href='/download-jjfa/'>解决方案</a></li>
+			</ul>
+			<div class="w183">
+				<ul>
+				<li><a href="/about/" class="tit">关于智腾</a></li>
+		        
+		        <li><a href='/about-gy/'>关于智腾</a></li>
+		        
+		        <li><a href='/about-qywh/'>企业文化</a></li>
+		        
+		        <li><a href='/about-qyzz/'>企业资质</a></li>
+		        
+		        <li><a href='/about-qyry/'>企业荣誉</a></li>
+		        
+		        <li><a href='/about-fzlc/'>发展历程</a></li>
+		        
+		        <li><a href='/about-zlcl/'>质量策略</a></li>
+		        
+				</ul>
+				<ul>
+				<li><a href="/contact/" class="tit">联系我们</a></li>
+		        
+		        <li><a href='/contact-lxwm/'>联系我们</a></li>
+		        
+		        <li><a href='/contact-job/'>人才招聘</a></li>
+		        
+				</ul>
+			</div>
+			<ul>
+				<li><a href="/news/" class="tit">新闻资讯</a></li>
+		        
+		        <li><a href='/news-gs/'>公司新闻</a></li>
+		        
+		        <li><a href='/news-zyhd/'>重要活动</a></li>
+		        
+		        <li><a href='/news-jszs/'>技术知识</a></li>
+		        
+		        <li><a href='/news-jplw/'>精品论文</a></li>
+		        
+		        <li><a href='/news-hyzx/'>行业资讯</a></li>
+		        
+			</ul>
+		</div>
+		<div class="f-tips">
+			<!--<img src="/images/erweima.jpg" width="150" height="150" class="fl" alt="扫一扫，了解更多" id="imgewm">
+			<div class="tips"><p>扫一扫，了解更多！</p></div>-->
+			<h2>@官方微博</h2>
+			<div class="weibo">
+				<a href="http://weibo.com" target="_blank"><img src="/images/sign05.png" width="39" height="39" class="png" alt="官方微博"></a>
+				<a href="http://t.qq.com" target="_blank"><img src="/images/sign06.png" width="39" height="39" class="png" alt="官方微博"></a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="back-top"></div>
+		 <!-- 二维码 -->
+	</div>
+	</div>
+</div>
+<!-- 最底部 -->
+<div class="footer-b">
+	<div class="w960">
+		<div class="links-box">
+			<p>友情链接</p>
+			<div class="links-list">
+				<a href='http://www.hnynsensor.com' target='_blank'>汉源传感</a> 
+			</div>
+		</div>
+		<p class="fl"><a href="#">法律声明</a>|<a href="/contact/">联系我们</a>
+		</p>
+		<p class="fr">Copyright ©2016 青岛智腾微电子有限公司 技术支持：<a href="http://www.hxkj.cc" title="慧学科技" >慧学科技</a> 鲁ICP备0605662号</span></p>
+		<div class="clear"></div>
+	</div>
+</div>
+<script src="/js/baidushare.js"></script>
+<script>
+//百度剑桥
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c423573aa9a730e372cfe8c9aafd363d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript" src="/js/imgshow.js"></script>
+<script src='/js/article_product_base.js'></script>
+<script src="/js/scroll_proinfo.js"></script>
+<link href="/css/skitter.styles.css" rel="stylesheet" />
+<script src="/js/jquery.skitter.js"></script>
+
+</body>
+</html>

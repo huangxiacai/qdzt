@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="headBaseRefer.htm"/}
+    <link href="/css/common/swiper.min.css" rel="stylesheet">
+    <link href="/css/zt_industry.css?v=7" rel="stylesheet">
+</head>
+
+<body>
+    <div id="zt_home">
+        {dede:include filename="navBase.htm"/}
+        <div class="zt_content">
+            <div class="zt_content_left container-fluid">
+                {dede:type typeid="68"}
+                <h2>[field:typename/]</h2> {/dede:type}
+                <div class="zt_item_content_wrapper">
+                    {dede:channelartlist typeid="68"}
+                    <dl class="zt_dl ">
+                        <dt>
+                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                        <dd class="zt_dd zt_def_hide">
+                            {dede:arclist}
+                            <li>
+                                - <a href="[field:arcurl /]">[field:title /]</a>
+                            </li>
+                            {/dede:arclist}
+                        </dd>
+                    </dl>
+                    {/dede:channelartlist}
+                </div>
+            </div>
+            <div class="zt_content_right">
+                <div class="zt_list_banner">
+                    <img data-src="../uploads/allimg/160409/1-1604092312030-L.jpg" class="swiper-lazy" alt="高温线性电源模块">
+                </div>
+                <!--面包屑-->
+                <div class="zt_crumbs_wrapper">
+                    <p class="zt_crumbs">
+                        {dede:field name='position'/}
+                    </p>
+                </div>
+                {dede:type}
+                <h2 class="zt_list_title">[field:typename/]</h2> {/dede:type}
+                <div>
+                    
+                    <div class="zt_product_wrapper_list container-fluid">
+                         <h1>{dede:field.title/}</h1>
+                        <div class="time">作者：{dede:field.writer/}  更新时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</div>
+                        <div class="detail">
+                            {dede:field.body/}
+                        </div>
+                        <div class="page">
+                            <div class="dede_pages">
+                                <ul class="pagelist">
+                                    {dede:pagebreak/}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="zt_related_product">
+                            <h3>相关产品</h3>
+                            <div>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="turn">
+                            <div class="turn-main">
+                                <p>{dede:prenext get='pre'/}</p>
+                                <p>{dede:prenext get='next'/}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {dede:include filename="footBase.htm"/}
+    </div>
+    {dede:include filename="bottomBaseRefer.htm"/}
+    <script type="text/javascript" src="/js/zt_product_class_list.js"></script>
+</body>
+
+</html>

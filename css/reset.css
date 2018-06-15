@@ -1,0 +1,234 @@
+﻿@charset "utf-8";
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/*Html5*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+/*Base*/
+html {
+	font: 12px/1.8 "微软雅黑";
+	color: #666;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; /*修正手持设备字体变化*/
+}
+* {
+    margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+    background: transparent; /*修正win8系统IE连接灰色背景*/
+	outline:none;
+	blr:expression(this.onFocus=this.blur());
+}
+a:focus {
+    outline: 0;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+img {
+    border: 0;
+	-ms-interpolation-mode:bicubic
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+    margin: 0;
+    outline:none;
+}
+button,
+input {
+    line-height: normal;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; 
+    cursor: pointer; 
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
+}
+input[type="search"] {
+    -webkit-appearance: textfield; 
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input.submit {
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+}
+input.radio {
+	width: 13px;
+	height: 13px;
+	float: left;
+	display: inline;
+}
+textarea {
+    overflow: auto; 
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ul,
+ol { 
+	list-style:none;
+}
+
+/*清除浮动*/
+.clear {
+    clear: both;
+    height:0px;
+    line-height:0px;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+dl,dd,dt{list-style:none;padding:0px; margin:0px;}
+
+/**新增产品页面的li**/
+.p-product_item{
+       width: 1276px;
+       margin: 0 auto;
+       background:#fff;
+       height: 375px;
+       margin-bottom: 20px;
+    }
+    .p-product_wrapper ul{
+    	width:100%;
+    	margin-bottom:20px;
+    	height: 300px;
+    	list-style:none;
+    }
+    .p-product_wrapper{
+    	width:1050px;
+    	margin:0 auto;
+    }
+    .p-product_wrapper ul li{
+    	float:left;
+    	text-align: center;
+    	width:240px;
+    	margin-right: 30px;
+    	box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+    }
+    .p-product_wrapper ul li:last-child{
+    	margin-right: 0;
+    }
+    .p-product_wrapper ul li a{
+    	width:100%;
+    	text-decoration: none;
+	    background: transparent;
+	    outline: none;
+	    blr: expression(this.onFocus=this.blur());
+	    cursor: pointer;
+	    color:#1a1a1a;
+	    font-size: 16px;
+    }
+    .p-product_wrapper ul li a p{
+    	color:#1a1a1a;
+    	line-height: 55px;
+    }
+    .p-product_imgcontainer{
+    	width:100%;
+    	height: 240px;
+    }
+     .p-product_imgcontainer img{
+     	width:100%;
+     	height: 100%;
+     	display: block;
+     }
+     .p-product_header{
+     	line-height: 60px;
+     }
+    .p-product_header h5{
+    	color:#4267a0;
+    	font-size: 18px;
+    	display: inline-block;
+    }
+    .p-product_header a{
+    	color:#4267a0;
+    	font-size: 16px;
+    	float:right;
+    	text-decoration: none;
+	    background: transparent;
+	    outline: none;
+	    blr: expression(this.onFocus=this.blur());
+	    cursor: pointer;
+        padding-right: 20px;
+	    background: url(http://www.qdzitn.com/images/bg_sign06.jpg) no-repeat right center;
+	    line-height: 30px;
+	    font-family: Arial;
+	    color: #5d9dc0;
+	    text-transform: uppercase;
+	    display:inline;
+	    margin-top: 15px;
+    }
+    .p-product_content li a{
+    	height: 100%;
+    	display: block;
+    }
+    .p-product_content li a:hover{
+    	border:1px solid #5a6583;
+    }
+
+

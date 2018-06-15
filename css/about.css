@@ -1,0 +1,21 @@
+.about-top li {
+	width: 246px;
+	height: 402px;
+	padding: 8px 37px 0;
+	line-height: 18px;
+	color: #fff;
+	background: url(../images/bg_bg01.jpg) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.about-top li.se {
+	background: url(../images/bg_bg02.jpg) no-repeat right bottom #fff;
+	left: 320px;
+	top: 0;
+}
+.about-top li.th {
+	background: url(../images/bg_bg03.jpg) no-repeat;
+	left: 640px;
+	top: 0;
+}

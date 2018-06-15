@@ -1,0 +1,115 @@
+.product_lists_ul{
+	width:2240px;
+}
+.p-product_lists{
+		position: relative;
+		overflow: auto;
+	}
+	.p-product_item.p-product_lists{
+		height: auto;
+	}
+	.p-product_item_left{
+		width:212px;
+		float:left;
+	}
+	.p-product_item_right{
+		margin-left: 212px;
+		width:1064px;
+	}
+	.p-product_item_right_item{
+		width: 226px;
+		height: 340px;
+		padding: 15px;
+		background: #f6f6f6;
+		float: left;
+		margin-right: 10px;
+		line-height: 20px;
+		color: #606060;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	.p-product_item_right_head{
+	    height: 93px;
+	    line-height: 93px;
+	    text-align: center;
+	    background: url(/images/ri_bt_bj.jpg) no-repeat center;
+	    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+	    font-size: 20px;
+	    color: #231916;
+	}
+	.p-product_item_left_lists{
+		text-align: center;
+		font-size: 16px;
+		padding:10px;
+	}
+	.p-product_item_left_lists>li{
+          margin-bottom: 10px;
+	}
+	.p-product_item_left_nav_child{
+		text-align: left;
+	}
+	.p-product_item_left_more{
+		color:#4267a0;
+    	font-size: 16px;
+    	float:right;
+    	text-decoration: none;
+	    background: transparent;
+	    outline: none;
+	    blr: expression(this.onFocus=this.blur());
+	    cursor: pointer;
+	    background: url(http://www.qdzitn.com/images/bg_sign06.jpg) no-repeat right center;
+	    line-height: 32px;
+	    font-family: Arial;
+	    color: #5d9dc0;
+	    text-transform: uppercase;
+	    display:inline;
+	    padding-right: 15px;
+        position: absolute;
+        right: 0;
+	}
+	.p-product_item_left_ul li a{
+		font-size: 12px;
+		color:#666;
+		text-decoration: none;
+		background: transparent;
+		outline: none;
+	}
+	.p-product_item_left_lists>li>div{
+		text-align: left;
+        border-bottom: 1px solid #e1e1e1;
+        position: relative;
+	}
+	.p-product_item_right_item a p{
+		color: #1a1a1a;
+		line-height: 36px;
+		text-align: center;
+		font-size: 15px;
+		text-align: left;
+		line-height: normal;
+	}
+	.p-product_item_right_item a .p-product_title{
+		line-height: 44px;
+		color: #20568a;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		word-break: break-all;
+		width: 90%;
+	}
+	.p-product_item_right_item a .p-product_des{
+		    font-size: 14px;
+		    color: #919191;
+		    line-height: 1.6;
+	}
+
+.p-product_item_left_ul li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-left: 10px;
+    width: 90%;
+    text-align: left;
+}

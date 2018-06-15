@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="headBaseRefer.htm"/}
+    <link href="/css/common/swiper.min.css" rel="stylesheet">
+    <link href="/css/zt_product_details.css?v=6" rel="stylesheet">
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=bW8pz9Scv8fRcfaGIibp4irS&services=&t=20180529182003"></script>
+</head>
+
+<body>
+    <div id="zt_home">
+        {dede:include filename="navBase.htm"/}
+        <div class="zt_content">
+            <div class="zt_content_left container-fluid">
+                {dede:include filename="product_left_item56.htm"/}
+            </div>
+            <div class="zt_content_right">
+                <div class="zt_list_banner">
+                    <img data-src="../uploads/allimg/160409/1-1604092312030-L.jpg" class="swiper-lazy" alt="高温线性电源模块">
+                </div>
+                <!--面包屑-->
+                <div class="zt_crumbs_wrapper">
+                    <p class="zt_crumbs">
+                        {dede:field name='position'/}
+                    </p>
+                </div>
+                {dede:type}
+                <h2 class="zt_list_title">[field:typename/]</h2> {/dede:type}
+                <div>
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#instr" data-toggle="tab">产品介绍</a>
+                        </li>
+                        <li><a href="#size" data-toggle="tab">技术规格</a></li>
+                        <li><a href="#prod" data-toggle="tab">相关产品</a></li>
+                        <li><a href="#contact" data-toggle="tab">销售联系</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="instr">
+                            <p class="pl20">{dede:field.body/}
+                                <br />
+                                <br /> </p>
+                        </div>
+                        <div class="tab-pane fade" id="size">
+                            {dede:field.jsgg/}
+                        </div>
+                        <div class="tab-pane fade" id="prod">
+                            <div class="zt_other_arc">
+                                {dede:arclist}
+                                <div class="col-md-6">
+                                    <div class="zt_indr_item">
+                                        <div class="zt_indr_item_img">
+                                            <img src="[field:litpic/]" alt="[field:fulltitle/]" />
+                                        </div>
+                                        <div class="zt_indr_item_list">
+                                            <h2><a href="[field:arcurl /]">[field:title /]</a></h2>
+                                            <div class="zt_indr_more"><a href='{dede:field name=' typeurl '/}'>了解更多></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact">
+                            <div class="zt_map_wrapper">
+                                <div id="allmap"></div>
+                            </div>
+                            <div class="zt_content_buttom">
+                                <div class="col-md-3">
+                                    <div class="zt_buttom_left"><img src="/img/tel.png" /></div>
+                                    <div class="zt_buttom_right">
+                                        <h4>电话</h4>
+                                        <p>+86-0532-68013919</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="zt_buttom_left phone"><img src="/img/phone.png" /></div>
+                                    <div class="zt_buttom_right phone">
+                                        <h4>手机</h4>
+                                        <p>13668861000</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="zt_buttom_left"><img src="/img/email.png" /></div>
+                                    <div class="zt_buttom_right">
+                                        <h4>邮箱</h4>
+                                        <p>sale@qdzitn</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="zt_buttom_left"><img src="/img/position.png" /></div>
+                                    <div class="zt_buttom_right">
+                                        <h4>地址</h4>
+                                        <p>中国青岛高薪区锦业路1号A3座</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {dede:include filename="footBase.htm"/}
+    </div>
+    {dede:include filename="bottomBaseRefer.htm"/}
+    <script type="text/javascript" src="/js/zt_product_details.js"></script>
+</body>
+
+</html>

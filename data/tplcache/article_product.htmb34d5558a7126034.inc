@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("field","",111,130);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",131,157);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",198,220);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",260,311);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",895,930);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("type","[field:typename/]",1045,1085);
+$z[6]=Array("type","[field:typelink /]",1304,1362);
+$z[6][4]['typeid']="0";
+$z[6][4]['row']="1";
+$z[7]=Array("field","",1561,1580);
+$z[7][4]['name']="title";
+$z[8]=Array("field","",1696,1725);
+$z[8][4]['name']="position";
+$z[9]=Array("field","",2121,2165);
+$z[9][4]['name']="picname";
+$z[9][4]['runphp']="var_dmp(@me)";
+$z[10]=Array("field","",2789,2807);
+$z[10][4]['name']="body";
+$z[11]=Array("field","",2923,2941);
+$z[11][4]['name']="jsgg";
+$z[12]=Array("arclist","\r\n                            <li>\r\n                                <a href=\"[field:arcurl/]\" >\r\n                                    <div class=\"intro\">\r\n                                        <p>[field:title/]</p>\r\n                                        <span>[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</span>\r\n                                        <div class=\"sign\"><div class=\"t\"><img src=\"[field:litpic/]\"></div>\r\n                                            <div class=\"d\"></div>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n							",3042,3765);
+$z[12][4]['pagesize']="6";
+$z[12][4]['titlelen']="40";
+$z[13]=Array("global","",3955,3980);
+$z[13][4]['name']="cfg_protel";
+$z[14]=Array("prenext","",5692,5717);
+$z[14][4]['get']="pre";
+$z[15]=Array("prenext","",5750,5776);
+$z[15][4]['get']="next";
+$z[16]=Array("type","[field:typelink /]",5815,5873);
+$z[16][4]['typeid']="0";
+$z[16][4]['row']="1";
+$z[17]=Array("include","",6000,6037);
+$z[17][4]['filename']="footer.htm";
+
+?>

@@ -1,0 +1,15 @@
+.news-list .list_article_content{
+    padding: 18px 19px 0 19px;
+}
+.pagedl{line-height:30px;font-size:13px;margin:0 auto;}
+.pagedl dt{ min-width:60px;width:auto; height:30px;float:left; text-align:center;line-height:23px;}
+.pagedl dt a {  font-size:12px;text-decoration:none;}
+.pagedl dt a:hover {background:none;color:#666; }
+.pagedl dd{ width:25px; height:30px;float:left; text-align:center;}
+.pagedl dd a { display:block; text-decoration:none;text-align:center;}
+.pagedl dd a:hover { width:auto;color:#666;color:#fff; display:block; background-color:#0066CC; no-repeat center;}
+.pagedl dd .curpage { width:auto;color:#fff; display:block; background-color:#0066CC; no-repeat center;}
+.pagedl dd a.next { font-size: 12px;  padding-right: 18px; background-color:#0066CC; no-repeat right 0;}
+.pagedl dd a.next:hover { color: #1a4ea3; background-position: right -24px;;}
+.pagedl dd a.pre { background: url(/images/prev05.jpg) no-repeat; }
+.pagedl dd a.pre:hover {  background-position: 0 -24px;}

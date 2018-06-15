@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]"><div style="font-size:14px; font-weight:bold;">[field:title/]</div>[field:info/]...</a>

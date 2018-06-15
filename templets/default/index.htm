@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="headBaseRefer.htm"/}
+    <link href="/css/common/swiper.min.css" rel="stylesheet">
+    <link href="/css/zt_index.css?v=2" rel="stylesheet">
+</head>
+
+<body>
+    <div id="zt_home">
+        {dede:include filename="navBase.htm"/}
+        <div class="zt_content">
+            <div class="zt_index_banner">
+                <div class="swiper-container-banner">
+                    <div class="zt_swiper-wrapper swiper-wrapper">
+                        {dede:arclist typeid='34'}
+                        <a class="zt_swiper-item swiper-slide" href="[field:redirecturl/]">
+		                    <img data-src="[field:litpic/]" class="swiper-lazy" alt="[field:title/]">
+		                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		                </a> {/dede:arclist}
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                </div>
+            </div>
+            <div class="zt_main_content container-fluid">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row zt_index_content_bg">
+                            <div class="col-md-4">
+                                <div class="zt_content_item_title">
+                                    <h2>产品</h2>
+                                </div>
+                                <div class="zt_content_item_content">
+                                    <ul class="zt_list_group">
+                                        {dede:channel typeid='1'}
+                                        <li class="zt_list_group_item"><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                        {/dede:channel}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="zt_content_item_title">
+                                    <h2>行业</h2>
+                                </div>
+                                <div class="zt_content_item_content">
+                                    <ul class="zt_list_group">
+                                        {dede:channel typeid='68'}
+                                        <li class="zt_list_group_item"><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                        {/dede:channel}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="zt_content_item_title">
+                                    <h2>案例</h2>
+                                </div>
+                                <div class="zt_content_item_content">
+                                    <ul class="zt_list_group">
+                                        {dede:arclist typeid='80' titlelen='60' pagesize='8' infolen='80' isweight="Y" orderby="weigth" orderway="desc"}
+                                        <li class="zt_list_group_item zt_show_online"><a href="[field:arcurl/]">[field:title/]</a></li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row zt_index_content_bg zt_index_second_row">
+                            <div class="col-md-6">
+                                <div class="zt_content_item_title">
+                                    <h2>新闻</h2>
+                                </div>
+                                <div class="zt_content_item_content">
+                                    <ul class="zt_list_group">
+                                        {dede:arclist typeid='19,20,23' titlelen='60' row='5' isweight="Y" orderby='weight' orderway='desc'}
+                                        <li class="zt_list_group_item"><a href="[field:arcurl/]">[field:title/]<span class="zt_list_group_item_right">[field:pubdate function="MyDate('m.d',@me)"/]</span></a></li>
+                                        {/dede:arclist}
+                                    </ul>
+                                    <a class="zt_item_more" href="#">更多>></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="zt_content_item_title">
+                                    <h2>资讯</h2>
+                                </div>
+                                <div class="zt_content_item_content">
+                                    <ul class="zt_list_group">
+                                        {dede:arclist typeid='21,22' titlelen='60' row='5' isweight="Y" orderby='weight' orderway='desc'}
+                                        <li class="zt_list_group_item"><a href="[field:arcurl/]">[field:title/]<span class="zt_list_group_item_right">[field:pubdate function="MyDate('m.d',@me)"/]</span></a></li>
+                                        {/dede:arclist}
+                                    </ul>
+                                    <a class="zt_item_more" href="#">更多>></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  ">
+                        <div class="zt_content_right_style zt_index_content_bg">
+                            <div class="zt_content_item_title zt_tj">
+                                <h2>推荐</h2>
+                            </div>
+                            <div class="zt_content_item_content_right zt_tj_content">
+                                <ul>
+                                    {dede:arclist typeid='9,51,56,60,61,64' row='6' titlelen='60' orderby='rand' infolen='75'}
+                                    <li>
+                                        <a href="[field:arcurl/]" class="row vertical-middle-sm">
+                                            <div class="zt_listview_img col-md-4"><img src="[field:litpic/]" alt="[field:fulltitle/]"></div>
+                                            <div class="zt_listview_text zt_listview_text_right col-md-8">
+                                                <h3>[field:title/]</h3>
+                                                <p class="zt_show_mulline">[field:infos/]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    {/dede:arclist}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--公司简介-->
+            <div class="zt_company_profile">
+                <p>
+                    {dede:global.cfg_description/}
+                </p>
+            </div>
+            <!--友情链接-->
+            <div class="zt_links">
+                <div class="other-way-login">
+                    <h2 class="wrap"><span class="title">友情链接</span></h2>
+                </div>
+                <div class="zt_link_inner">
+                    {dede:flink row='40' titlelen="40" typeid="0"}[field:link /]{/dede:flink}
+                </div>
+            </div>
+        </div>
+        {dede:include filename="footBase.htm"/}
+    </div>
+    {dede:include filename="bottomBaseRefer.htm"/}
+    <script type="text/javascript" src="/js/common/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/zt_index.js"></script>
+</body>
+
+</html>

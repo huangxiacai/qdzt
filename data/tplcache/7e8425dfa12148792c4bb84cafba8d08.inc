@@ -1,0 +1,1 @@
+<li class="zt_list_group_item"><a href="[field:arcurl/]">[field:title/]<span class="zt_list_group_item_right">[field:pubdate function="MyDate('m.d',@me)"/]</span></a></li>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="headBaseRefer.htm"/}
+    <link href="/css/common/swiper.min.css" rel="stylesheet"/>
+    <link href="/css/zt_product.css?v=5" rel="stylesheet"/>
+</head>
+
+<body>
+    <div id="zt_home">
+        {dede:include filename="navBase.htm"/}
+        <div class="zt_content">
+            <!--面包屑-->
+            <div class="zt_crumbs_wrapper">
+                <p class="zt_crumbs">
+                    {dede:field name='position'/}
+                </p>
+            </div>
+            <div class="zt_content_basetitle">
+                <h2>我们的产品</h2>
+            </div>
+            <div class="zt_product_wrapper container-fluid">
+                <div class="zt_product_item row">
+                    <div class="col-md-4">
+                        <div class="zt_product_list_item_bg zt_offset_left">
+                            <h2>
+                            {dede:type typeid='51'}
+                            	<a href="[field:typeurl/]">[field:typename/]</a>
+                           	{/dede:type}
+                           	</h2>
+                            <div class="zt_product_list_item_inner">
+                                <div class="zt_item_img_wrapper">
+                                	{dede:sql sql="SELECT typename,typedir,typeimg FROM zt_arctype where id='51'"}
+                                    <img src="[field:typeimg/]" alt="[field:typename/]" /> 
+                                    {/dede:sql}
+                                </div>
+                                <div class="zt_item_content_wrapper">
+                                    {dede:channelartlist typeid='51'}
+                                    <dl class="zt_dl">
+                                        <dt>
+                                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                                        <dd class="zt_dd zt_def_hide">
+                                            {dede:arclist}
+                                            <li>
+                                                - <a href="[field:arcurl /]">[field:title /]</a>
+                                            </li>
+                                            {/dede:arclist}
+                                        </dd>
+                                    </dl>
+                                    {/dede:channelartlist}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zt_product_list_item_bg zt_offset_left">
+                        	<h2>
+                            {dede:type typeid='60'}
+                            	<a href="[field:typeurl/]">[field:typename/]</a>
+                           	{/dede:type}
+                           	</h2>
+                            <div class="zt_product_list_item_inner">
+                                <div class="zt_item_img_wrapper">
+                                    {dede:sql sql="SELECT typename,typedir,typeimg FROM zt_arctype where id='60'"}
+                                    <img src="[field:typeimg/]" alt="[field:typename/]" /> 
+                                    {/dede:sql}
+                                </div>
+                                <div class="zt_item_content_wrapper">
+                                    {dede:channelartlist typeid='60'}
+                                    <dl class="zt_dl">
+                                        <dt>
+                                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                                        <dd class="zt_dd zt_def_hide">
+                                            {dede:arclist}
+                                            <li>
+                                                - <a href="[field:arcurl /]">[field:title /]</a>
+                                            </li>
+                                            {/dede:arclist}
+                                        </dd>
+                                    </dl>
+                                    {/dede:channelartlist}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="zt_product_list_item_bg zt_offset_middle">
+                            <h2>
+                            {dede:type typeid='56'}
+                            	<a href="[field:typeurl/]">[field:typename/]</a>
+                           	{/dede:type}
+                           	</h2>
+                            <div class="zt_product_list_item_inner">
+                                <div class="zt_item_img_wrapper">
+                                    {dede:sql sql="SELECT typename,typedir,typeimg FROM zt_arctype where id='56'"}
+                                    <img src="[field:typeimg/]" alt="[field:typename/]" /> 
+                                    {/dede:sql}
+                                </div>
+                                <div class="zt_item_content_wrapper">
+                                    {dede:channelartlist typeid='56'}
+                                    <dl class="zt_dl">
+                                        <dt>
+                                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                                        <dd class="zt_dd zt_def_hide">
+                                            {dede:arclist}
+                                            <li>
+                                                - <a href="[field:arcurl /]">[field:title /]</a>
+                                            </li>
+                                            {/dede:arclist}
+                                        </dd>
+                                    </dl>
+                                    {/dede:channelartlist}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zt_product_list_item_bg zt_offset_middle">
+                            <h2>
+                            {dede:type typeid='61'}
+                            	<a href="[field:typeurl/]">[field:typename/]</a>
+                           	{/dede:type}
+                           	</h2>
+                            <div class="zt_product_list_item_inner">
+                                <div class="zt_item_img_wrapper">
+                                    {dede:sql sql="SELECT typename,typedir,typeimg FROM zt_arctype where id='61'"}
+                                    <img src="[field:typeimg/]" alt="[field:typename/]" /> 
+                                    {/dede:sql}
+                                </div>
+                                <div class="zt_item_content_wrapper">
+                                    {dede:channelartlist typeid='61'}
+                                    <dl class="zt_dl">
+                                        <dt>
+                                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                                        <dd class="zt_dd zt_def_hide">
+                                            {dede:arclist}
+                                            <li>
+                                                - <a href="[field:arcurl /]">[field:title /]</a>
+                                            </li>
+                                            {/dede:arclist}
+                                        </dd>
+                                    </dl>
+                                    {/dede:channelartlist}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="zt_product_list_item_bg zt_offset_right">
+                        <h2>
+                            {dede:type typeid='9'}
+                            	<a href="[field:typeurl/]">[field:typename/]</a>
+                           	{/dede:type}
+                           	</h2>
+                            <div class="zt_product_list_item_inner">
+                                <div class="zt_item_img_wrapper">
+                                    {dede:sql sql="SELECT typename,typedir,typeimg FROM zt_arctype where id='9'"}
+                                    <img src="[field:typeimg/]" alt="[field:typename/]" /> 
+                                    {/dede:sql}
+                                </div>
+                                <div class="zt_item_content_wrapper">
+                                    {dede:channelartlist typeid='9'}
+                                    <dl class="zt_dl">
+                                        <dt>
+                                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                                        <dd class="zt_dd zt_def_hide">
+                                            {dede:arclist}
+                                            <li>
+                                                - <a href="[field:arcurl /]">[field:title /]</a>
+                                            </li>
+                                            {/dede:arclist}
+                                        </dd>
+                                    </dl>
+                                    {/dede:channelartlist}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zt_product_list_item_bg zt_offset_right">
+                        <h2>
+                            {dede:type typeid='64'}
+                            	<a href="[field:typeurl/]">[field:typename/]</a>
+                           	{/dede:type}
+                           	</h2>
+                            <div class="zt_product_list_item_inner">
+                                <div class="zt_item_img_wrapper">
+                                    {dede:sql sql="SELECT typename,typedir,typeimg FROM zt_arctype where id='64'"}
+                                    <img src="[field:typeimg/]" alt="[field:typename/]" /> 
+                                    {/dede:sql}
+                                </div>
+                                <div class="zt_item_content_wrapper">
+                                    {dede:channelartlist typeid='64'}
+                                    <dl class="zt_dl">
+                                        <dt>
+                                            <span class="zt_hasShow_list glyphicon glyphicon-plus-sign"></span>
+                                            <a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></dt>
+                                        <dd class="zt_dd zt_def_hide">
+                                            {dede:arclist}
+                                            <li>
+                                                - <a href="[field:arcurl /]">[field:title /]</a>
+                                            </li>
+                                            {/dede:arclist}
+                                        </dd>
+                                    </dl>
+                                    {/dede:channelartlist}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {dede:include filename="footBase.htm"/}
+    </div>
+    {dede:include filename="bottomBaseRefer.htm"/}
+    <script type="text/javascript" src="/js/zt_product.js"></script>
+</body>
+
+</html>

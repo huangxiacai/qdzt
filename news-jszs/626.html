@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>几种光纤温度传感器的原理-青岛智腾微电子</title>
+<meta name="keywords" content="几种光纤温度传感器的原理" />
+<meta name="description" content=" 光纤温度传感器按其工作原理可分为功能型和传输型两种。功能型光纤温度传感器是利用光纤的各种特性f相位、偏振、强度等)随温度变换的特点，进行温度测定。" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css?v=23" rel="stylesheet" >
+<!--头部引用favicon.ico-->
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />  
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
+<!--商桥--->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9bb8ff2cf6b65d12293b9e1ff6507e30";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<link href="/css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="">
+<!--头部文件  -->
+<div class="header">
+<div class="header-top">
+    <div class="w960">
+        <p class="fl"><a href="/"  style="color: #a8b5c7">青岛智腾微电子有限公司</a></p>
+        <div class="fr">
+            <a href="/" class="home">现场实录</a>
+            <p class="fl">|</p>
+            <a href="/contact-job/" class="email" >人力资源</a>
+           <div class="wx"><a href="javascript:void(0);"  class="bb" id="wxs" ><img src="/images/wx2.png" width="39" height="39" class="png" alt="wx">
+            <div class="wx-box">
+                    <p class="ttt">扫扫二维码</p>
+                    <ul>
+                    <li>
+                        <img src="/images/zp.jpg" width="80" height="80" class="fl" alt="智腾微信公众号">
+                        <p>微信公众号</p>
+                    </li>
+                   </ul>
+                    </div></a>
+                </div>
+            <a href="http://weibo.com/"  class="bb" title="新浪微博" rel="nofollow"><img src="/images/sina.png" width="39" height="39" class="png" alt="新浪微博"></a>
+            <a href="http://t.qq.com/"  class="bb" title="腾讯微博" rel="nofollow"><img src="/images/qq.png" width="39" height="39" class="png" alt="腾讯微博"></a>
+            <form action="/plus/search.php" class="fl" method="post" name="search" id="sForm" >
+                <div class="search">
+                    <div class="select">
+                        <p>搜索</p>
+                    </div>
+                    <input type="text" id="key"  name="keyword"  onKeyPress="if(event.keyCode==13){searchbtn();}">
+                    <input type="submit" value="" class="submit" id="btnsearch" onClick="searchbtn();">
+                </div>
+            </form>
+            <div class="language">
+                <p>中文</p>
+                <div class="language-list">
+                    <a href="/" >中文</a>
+                    <a href="http://en.ztmicro.com"  rel="nofollow">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-main">
+    <div class="w960">
+        <h2 class="logo fl"><a href="/"><img src="/images/logo.jpg"  class="fl" alt="智腾微电子"></a></h2>
+        <div class="nav">
+            <ul>
+                <li><a href="/" >网站首页</a></li>
+                <li>
+                    <a href="/product/" >产品展示</a>
+                    <div class="sign"></div>
+                    <div class="subnav product_subnav" style="left:50%;margin-left:-535px">
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                                 <div class="dd"><a href="/product-cgq/"   class="tit">传感器</a></div>
+                                 
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                             <div class="dl">
+                                 <div class="dd"><a href="/product-ccq/"   class="tit">存储器</a></div>
+                                 
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                                <div class="dd"><a href="/product-bhq/"   class="tit">变换器</a></div>
+                                 
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                                <div class="dd"><a href="/product-dymk/"   class="tit">电源模块</a></div>
+                                 <div class="dd"><a href="/product/dymk/54.html" class="user_split_string" >LH42094电源模块</a></div>
+<div class="dd"><a href="/product/dymk/55.html" class="user_split_string" >LH42094-250电源模块</a></div>
+<div class="dd"><a href="/product/dymk/56.html" class="user_split_string" >LH42095电源模块</a></div>
+<div class="dd"><a href="/product/dymk/57.html" class="user_split_string" >LH42095-250电源模块</a></div>
+<div class="dd"><a href="/product/dymk/58.html" class="user_split_string" >LH42117电源模块</a></div>
+<div class="dd"><a href="/product/dymk/59.html" class="user_split_string" >LH42117-250电源模块</a></div>
+<div class="dd"><a href="/product/dymk/60.html" class="user_split_string" >LH42118电源模块</a></div>
+<div class="dd"><a href="/product/dymk/61.html" class="user_split_string" >LH42118-250电源模块</a></div>
+<div class="dd"><a href="/product/dymk/62.html" class="user_split_string" >LHVR230电源模块</a></div>
+<div class="dd"><a href="/product/dymk/63.html" class="user_split_string" >LHVR250电源模块</a></div>
+<div class="dd"><a href="/product/dymk/143.html" class="user_split_string" >LM03000WD电源模块</a></div>
+<div class="dd"><a href="/product/dymk/144.html" class="user_split_string" >LM04000WD电源模块</a></div>
+<div class="dd"><a href="/product/dymk/147.html" class="user_split_string" >LM04070W电源模块</a></div>
+<div class="dd"><a href="/product/dymk/148.html" class="user_split_string" >LM04220电源模块</a></div>
+<div class="dd"><a href="/product/dymk/149.html" class="user_split_string" >LM04230WD电源模块</a></div>
+<div class="dd"><a href="/product/dymk/150.html" class="user_split_string" >LM04240WD电源模块</a></div>
+<div class="dd"><a href="/product/dymk/151.html" class="user_split_string" >LM100-12T01电源模块</a></div>
+<div class="dd"><a href="/product/dymk/152.html" class="user_split_string" >LM150-28S2电源模块</a></div>
+<div class="dd"><a href="/product/dymk/153.html" class="user_split_string" >LH79四路高温电源短节</a></div>
+<div class="dd"><a href="/product/dymk/155.html" class="user_split_string" >LH147122高温电源模块</a></div>
+
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                                <div class="dd"><a href="/product-hhjcdl/"   class="tit">混合集成电路</a></div>
+                                 
+                            </div>
+                        </div>
+                        <div class="pro-subnav-box">
+                            <div class="dl">
+                                 <div class="dd"><a href="/product-gxdh/"   class="tit">惯性导航</a></div>
+                                 
+                            </div>
+                        </div>
+                         <div class="pro-subnav-box subnav-box-skill">
+                             <div class="dl">
+                                <div class="dd"><a href="/product-tly/"   class="tit">陀螺仪</a></div>
+                                 
+                            </div>                     
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/about/" >关于智腾</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="left:-22px;">
+                        <div class="list" style="padding-top:0">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div class="intro">
+                            <h2>质量策略</h2>
+                            <a href="/about-zlcl/" class="fl" ><img src="/images/tzz1.jpg" width="126" class="fl" alt="质量策略"></a>
+                            <div class="tips">
+                                <a href="/about-zlcl/"  class="tit">智腾微电子质量策略</a>
+                                <span>追求品质，严格遵循宇航级别标准，达到国际...</span>
+                                <a href="/about-zlcl/"   class="btn">更多</a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="lists">
+                                <a href="/contact-lxwm/" >联系方式</a>
+                                <a href="/contact-job/" >人才招聘</a></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/download/" >资源下载</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="left:-172px">
+                        <div class="list" style="height:178px">
+                            <ul>
+                            <li><div style="font-size:16px;">产品手册</div></li>
+                            <li><a href='/download-cpsc/cgq/'  >传感器</a></li><li><a href='/download-cpsc/bhq/'  >变换器</a></li><li><a href='/download-cpsc/hhjcdl/'  >混合集成电路</a></li><li><a href='/download-cpsc/gwccq/'  >存储器</a></li><li><a href='/download-cpsc/gwdy/'  >电源模块</a></li>
+                            <li><div style="font-size:16px;"><a href="/download-jjfa/" >解决方案</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="intro" style="height:212px">
+                            <h2>现场实录</h2>
+                            <div class="intro-main">
+                                <a href="/download-xcsl/" class="fl" ><img src="/images/img22.jpg" width="93" height="62" class="fl" alt="现场实录"></a>
+                                <div class="r">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/news/" >新闻资讯</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="left:-306px">
+                        <div class="list" style="height:178px">
+                            <ul>
+                            <li><a href='/news-gs/'  >公司新闻</a></li><li><a href='/news-zyhd/'  >重要活动</a></li><li><a href='/news-jszs/'  >技术知识</a></li><li><a href='/news-jplw/'  >精品论文</a></li><li><a href='/news-hyzx/'  >行业资讯</a></li>
+                            </ul>
+                        </div>
+                        <div class="intro" style="height:212px">
+                            <h2>新闻资讯</h2>
+                            <div class="intro-main">
+                              
+                                <a href="/news/" class="fl" ><img src="/images/sywh1.jpg" width="100" class="fl" alt="新闻"></a>
+                                <div class="r">
+                                <a href="/news-jszs/770.html" class="tit" >压阻式三轴加速度计的设</a>
+                                    <a href="/news-jszs/770.html" >压阻式加速度传感器是最早开发的硅型微加速度...</a>
+                                    <span>2018.05</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/contact/" >联系我们</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="right:150px">
+                        <div class="list" style="height:178px">
+                            <ul>
+                            <li><a href="/contact/" >联系方式</a></li>
+                            <li><a href="/contact-job/" >加入我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="about-nav-img">
+                        <a href="/contact/" >
+                            <img src="/images/img23.jpg" width="216" alt="联系我们">
+                            <p>电话：0532-58717256 </br>手机：13668861000</br>地址：青岛高新区锦业路1号A3座</p></a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/cooperation/"  rel="nofollow">战略合作</a>
+                    <div class="sign"></div>
+                    <div class="subnav investor-subnav" style="right:0">
+                        <div class="list" style="padding-top:0">
+                            <ul>
+                             <li><a href="/cooperation/1.html" >海纳百川</a></li>
+                                <li><a href="/cooperation/2.html" >体系资源</a></li>
+                                <li><a href="/cooperation/3.html" >技术资源</a></li>
+                                <li><a href="/cooperation/4.html" >场地资源</a></li>
+                                <li><a href="/cooperation/5.html" >经济资源</a></li>
+                                <li><a href="/cooperation/6.html" >合作项目</a></li>
+                            </ul>
+                        </div>
+                        <div class="intro">
+                            <h2>战略合作</h2>
+                            <a href="/cooperation/" class="fl" ><img src="/images/tzz1.jpg" width="126" class="fl" alt="战略合作"></a>
+                            <div class="tips">
+                                <a href="/cooperation/"  class="tit">智腾微电子战略合作</a>
+                                <span>永葆创业激情 分享成长价值...</span>
+                                <a href="/cooperation/"   class="btn">更多</a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subnav-bot"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+<!--头部文件end  -->
+    <div class="inside-wrap culture-body">
+        <div class="inside-tips w960">
+            <h2>技术知识</h2>
+            <p class="fz16">聚焦科技之美</p>
+            <p>以高素质团队和专业设备打造业界领先的传感器、混合集成电路产品</p>
+            <a href="javascript:history.go(-1);" class="link link-inside"><img src="/images/sign09.png" width="44" height="44" class="png" alt="聚焦科技之美"></a>
+        </div>
+        <div class="path">
+            <div class="w960">
+                <h2 class="fl">技术知识</h2>
+                <p class="fr">
+               <a href="/" class="home"> </a><span class="sign"></span>
+                    <a href='/'>主页</a> / <a href='/news/'>新闻资讯</a> / <a href='/news-jszs/'>技术知识</a> / 
+                </p>
+            </div>
+        </div>
+        <div class="inside-main w960">
+            <div class="prolist-left_main newsinfo-main">
+                <h1>几种光纤温度传感器的原理</h1>
+                <div class="time">作者：admin  更新时间：2017-12-21</div>
+                <div class="detail">
+                <p style="text-align: center;">
+	<span style="font-size:14px;"><img alt="几种光纤温度传感器的原理" src="/uploads/allimg/171221/1-1G2211H64C95.png" style="width: 504px; height: 282px;" /></span></p>
+<p>
+	<span style="font-size:14px;">　　光纤温度传感器按其工作原理可分为功能型和传输型两种。功能型光纤温度传感器是利用光纤的各种特性f相位、偏振、强度等)随温度变换的特点，进行温度测定。这类传感器尽管具有&rdquo;传&rdquo;、&rdquo;感&rdquo;合一的特点，但也增加了增敏和去敏的困难。传输型光纤温度传感器的光纤只是起到光信号传输的作用，以避开测温区域复杂的环境，对待测对象的调制功能是靠其他物理性质的敏感元件来实现的。这类传感器由于存在光纤与传感头的光耦合问题，增加了系统的复杂性，且对机械振动之类的干扰较敏感。</span></p>
+<p>
+	<span style="font-size:14px;">　　光纤光栅温度传感器</span></p>
+<p>
+	<span style="font-size:14px;">　　光纤光栅温度传感技术主要研究Bmgg光纤传感技术。根据Bragg光纤光栅反射波长会随温度的变化而产生&rdquo;波长移位&rdquo;的原理制成光纤光栅温度传感器。1978年，加拿大渥太华通信研究中心首先发现掺锗石英光纤的光敏效应，采用注入法制成世界上第一只光纤光栅(FBG)。</span></p>
+<p>
+	<span style="font-size:14px;">　　光纤光栅温度传感器除了具有普通光纤温度传感器的许多优点外，还有一些明显优于其它光纤温度传感器的方面。其中最重要的就是它的传感信号为波长调制。</span></p>
+<p>
+	<span style="font-size:14px;">　　这一传感机制的好处在于：测量信号不受光源起伏、光纤弯曲损耗、连接损耗和探测器老化等因素的影响;避免了一般干涉型传感器中相位测量的不清晰和对固有参考点的需要;能方便地使用波分复用技术在一根光纤中串接多个布喇格光栅进行分布式测量;很容易埋人材料中对其内部的温度进行高分辨率和大范围地测量。</span></p>
+<p>
+	<span style="font-size:14px;">　　尽管光纤光栅温度传感器有很多优点，但在应用中还需考虑很多因素：波长微小位移的检测;宽光谱、高功率光源的获得;光检测器波长分辨率的提高;交叉敏感的消除;光纤光栅的封装;光纤光栅的可靠性;光纤光栅的寿命。</span></p>
+<p>
+	<span style="font-size:14px;">　　光纤荧光温度传感器</span></p>
+<p>
+	<span style="font-size:14px;">　　光纤荧光温度传感器是目前研究比较活跃的新型温度传感器。荧光测温的工作机理是建立在光致发光这一基本物理现象上。</span></p>
+<p>
+	<span style="font-size:14px;">　　所谓光致发光是一种光发射现象，就是当材料由于受紫外、可见光或红外区的光激发，所产生的发光现象。出射的荧光参数与温度有一一对应关系，通过检测其荧光强度或荧光寿命来得到所需的温度的。</span></p>
+<p>
+	<span style="font-size:14px;">　　强度型荧光光纤传感器受光纤的微弯曲、耦合、散射、背反射影响，造成强度扰动，很难达到高精度。荧光寿命型传感器可以避免上述缺点，因此是采用的主要模式，荧光寿命的测量是测温系统的关键。美国密西西比州立大学用一种商用的环氧胶做温度指示(PAHs)。PAHs在用紫外光激发时发荧光，荧光的强度随环氧胶周围温度的升高而减小，该传感器可监测20℃～100℃范围内的温度。</span></p>
+<p>
+	<span style="font-size:14px;">　　光纤荧光温度传感器于其它光纤温度传感器相比有自己独特的优点：由于荧光寿命与温度的关系从本质上讲是内在的，与光的强度无关，这样就可以制成自较准的光纤温度传感器。而一般的基于光强度检测的光纤温度传感器则因为系统的光传输特性往往与传输光纤和光纤耦合器等相关而需经常校准。目前国外的研究主要围绕着荧光源的选择.主要为下面几个方面：蓝宝石和红宝石发光、稀土发光及半导体吸收。</span></p>
+<p>
+	<span style="font-size:14px;">　　干涉型光纤温度传感器</span></p>
+<p>
+	<span style="font-size:14px;">　　干涉型光纤温度传感器是一种相位调制型光纤传感器。它是利用温度改变Mach&mdash;Zehnder干涉仪、Fabry&mdash;Perot干涉仪、Sagnac干涉仪等一些干涉仪的干涉条纹来外界测量温度。英国的Samer K.AbiKaed Bev用长周期光纤光栅做成Mach&mdash;Zehnder干涉型光纤温度传感器.其温度分辨率为O.7℃。</span></p>
+<p>
+	<span style="font-size:14px;">　　干涉型光纤温度传感器的温度分辨率高：动态响应宽：结构灵巧。研究干涉型光纤温度传感器的主要工作放在减小噪声干扰和信号解调上。</span></p>
+
+                </div>
+                <div class="page">
+                  
+                  <div class="dede_pages">
+                   <ul class="pagelist">
+                    
+                   </ul>
+                  </div>
+
+                </div>
+
+                <div class="turn">
+                    <div class="turn-main">
+                        <p>上一篇：<a href='/news-jszs/617.html'>无人机遥测系统最新发展新方向</a> </p>
+                        <p>下一篇：<a href='/news-jszs/627.html'>简介五种传统滤波和估计方法</a> </p>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="prolist-right_list">
+                <div class="prolist-right_new">
+                    <h3 class="prolist-right_commont_title">最新资讯<a href="../news/">更多></a></h3>
+                    <div class="prolist-right_new_content">
+                        <ul>
+                            <li>
+                             <em>1</em>
+                             <a href="/news-jszs/770.html">压阻式三轴加速度计的设计简介</a></li>
+<li>
+                             <em>2</em>
+                             <a href="/news-jszs/769.html">陀螺仪的相关功能介绍</a></li>
+<li>
+                             <em>3</em>
+                             <a href="/news-jszs/768.html">惯性导航和姿态控制在机器人行业的发展</a></li>
+<li>
+                             <em>4</em>
+                             <a href="/news-jszs/767.html">MEMS陀螺仪和加速度计产业发展方向</a></li>
+<li>
+                             <em>5</em>
+                             <a href="/news-jszs/766.html">我国开关电源技术的发展趋势</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="prolist-right_groom">
+                    <h3 class="prolist-right_commont_title">产品推荐</h3>
+                    <div class="prolist-right_groom_content">
+                        <!-- Swiper -->
+                        <div class="swiper_content_area swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="/product/dymk/151.html">
+                                        <img src="/uploads/170711/1-1FG11K15C17.png" alt="LM100-12T01电源模块">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>LM100-12T01电源模块</h3>
+                                                <p>LM100-12T01电源模块是一款非隔离三路输出DC/DC电源电路</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+<div class="swiper-slide">
+                                    <a href="/product/dymk/155.html">
+                                        <img src="/uploads/170711/1-1FG11K041123.png" alt="LH147122高温电源模块">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>LH147122高温电源模块</h3>
+                                                <p>LH147122高温电源模块可以把交流电压转换为直流电压输出，并且长期可靠的工作在175℃的环境中。</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+<div class="swiper-slide">
+                                    <a href="/product/dymk/60.html">
+                                        <img src="/uploads/160401/1-160401152UH29.png" alt="LH42118电源模块">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>LH42118电源模块</h3>
+                                                <p>任你行电源模块源自天成，何惧地火 LH42118系列电路是一种专门为工作在高温及宽温环境而设计的精密负稳压电源电路，该电</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+<div class="swiper-slide">
+                                    <a href="/product/dymk/58.html">
+                                        <img src="/uploads/171129/1-1G129151450916.png" alt="LH42117电源模块">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>LH42117电源模块</h3>
+                                                <p>任你行电源模块源自天成，何惧地火 LH42117系列电路是一种专门为工作在高温及宽温环境而设计的精密负稳压电源电路，该电</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+<div class="swiper-slide">
+                                    <a href="/product/dymk/57.html">
+                                        <img src="/uploads/171129/1-1G1291513311c.png" alt="LH42095-250电源模块">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>LH42095-250电源模块</h3>
+                                                <p>任你行电源模块源自天成，何惧地火 LH42095-250系列电路是一种专门为工作在高温及宽温环境而设计的精密负稳压电源电路，该</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Swiper end-->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<div class="clear"></div>
+<div class="footer">  
+<div class="footer-t">
+	<div class="w960">
+		<div class="fpro-list">
+			<ul>
+				<li><a href="/product/" class="tit">产品中心</a></li>
+		        
+		        <li><a href='/product/dymk/'>电源模块</a></li>
+		        
+		        <li><a href='/product/gxcgq/'>惯性传感器及变换器</a></li>
+		        
+		        <li><a href='/product/zhdh/'>组合导航系统</a></li>
+		        
+		        <li><a href='/product/cxycgq/'>高温测斜仪和高温惯性传感器</a></li>
+		        
+		        <li><a href='/product/cgqbhq/'>传感器及变换器</a></li>
+		        
+		        <li><a href='/product/hmjcdl/'>厚膜集成电路</a></li>
+		        
+			</ul>
+		</div>
+		<div class="f-list">
+			<ul>
+				<li><a href="/download/" class="tit">资源下载</a></li>
+		        
+		        <li><a href='/download-cpsc/cgq/'>传感器</a></li>
+		        
+		        <li><a href='/download-cpsc/bhq/'>变换器</a></li>
+		        
+		        <li><a href='/download-cpsc/hhjcdl/'>混合集成电路</a></li>
+		        
+		        <li><a href='/download-cpsc/gwccq/'>存储器</a></li>
+		        
+		        <li><a href='/download-cpsc/gwdy/'>电源模块</a></li>
+		        
+               <li><a href='/download-xcsl/'>现场实录</a></li>
+			   <li><a href='/download-jjfa/'>解决方案</a></li>
+			</ul>
+			<div class="w183">
+				<ul>
+				<li><a href="/about/" class="tit">关于智腾</a></li>
+		        
+				</ul>
+				<ul>
+				<li><a href="/contact/" class="tit">联系我们</a></li>
+		        
+		        <li><a href='/about-gy/'>关于智腾</a></li>
+		        
+		        <li><a href='/about-qywh/'>企业文化</a></li>
+		        
+		        <li><a href='/about-qyzz/'>企业资质</a></li>
+		        
+		        <li><a href='/about-qyry/'>企业荣誉</a></li>
+		        
+		        <li><a href='/about-fzlc/'>发展历程</a></li>
+		        
+		        <li><a href='/about-zlcl/'>质量策略</a></li>
+		        
+				</ul>
+			</div>
+			<ul>
+				<li><a href="/news/" class="tit">新闻资讯</a></li>
+		        
+		        <li><a href='/news-gs/'>公司新闻</a></li>
+		        
+		        <li><a href='/news-zyhd/'>重要活动</a></li>
+		        
+		        <li><a href='/news-jszs/'>技术知识</a></li>
+		        
+		        <li><a href='/news-jplw/'>精品论文</a></li>
+		        
+		        <li><a href='/news-hyzx/'>行业资讯</a></li>
+		        
+			</ul>
+		</div>
+		<div class="f-tips">
+			<!--<img src="/images/erweima.jpg" width="150" height="150" class="fl" alt="扫一扫，了解更多" id="imgewm">
+			<div class="tips"><p>扫一扫，了解更多！</p></div>-->
+			<h2>@官方微博</h2>
+			<div class="weibo">
+				<a href="http://weibo.com"><img src="/images/sign05.png" width="39" height="39" class="png" alt="官方微博"></a>
+				<a href="http://t.qq.com"><img src="/images/sign06.png" width="39" height="39" class="png" alt="官方微博"></a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="back-top"></div>
+		 <!-- 二维码 -->
+	</div>
+	</div>
+</div>
+<!-- 最底部 -->
+<div class="footer-b">
+	<div class="w960">
+		<p class="fl"><a href="#">法律声明</a>|<a href="/contact/">联系我们</a>
+		</p>
+		<p class="fr">Copyright ©2016 青岛智腾微电子有限公司  鲁ICP备0605662号</span></p>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<script src="/js/baidushare.js"></script>
+<script>
+//百度剑桥
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c423573aa9a730e372cfe8c9aafd363d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<script>
+//百度自动推送
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery1.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<script src="/js/headsearch.js"></script>
+<script src="/js/swiper.min.js"></script>
+<script src="/js/main.js?v=22"></script>
+<script src="/js/article_article_base.js"></script>
+</body>
+</html>

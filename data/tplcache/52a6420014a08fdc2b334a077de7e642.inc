@@ -1,0 +1,1 @@
+[field:content function='html2text(@me)'/]

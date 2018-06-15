@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css?v=22" rel="stylesheet" >
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+{dede:include filename="headquote.htm"/}
+<link href="/css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<!--头部文件  -->
+{dede:include filename="head.htm"/}
+   <!--头部文件end  -->
+    <div class="box_skitter">
+        <ul>
+        <li><img src="/uploads/allimg/160409/1-1604092311270-L.jpg" alt="高温存储器"></li>
+
+        </ul>
+    </div>
+    <div class="prolist-wrap">
+        <div class="w960">
+            
+            <div class="prolist-left_main prolist-main">
+                <div class="prolist-path">
+                    <p class="fl">{dede:type}[field:typename/]{/dede:type}</p>
+                    <p class="fr" id="liststr">
+                        <a href="/" class="home"> </a><span class="sign"></span>
+                        {dede:field name='position'/}
+                    </p>
+                </div>
+                <ul>
+                {dede:list pagesize='6' infolen='150' titlelen='40'orderby='weight' orderway='desc'}
+                    <li>
+                        <a href="[field:arcurl/]">
+                            <img src="[field:litpic/]" width="292" height="205" class="fl"  alt="[field:fulltitle/]" >
+                            <p class="fz16"><span >[field:title/]</span></p>
+                            <p>[field:infos/]...</p>
+                            <div class="line"></div>
+                        </a>
+                    </li>
+                {/dede:list}
+                </ul>
+                <div class="clear"></div>
+
+                <div class="news-list">
+                      <div class="page">
+                      <style type="text/css">
+                      .pagedl{line-height:30px;font-size:13px;margin:0 auto;}
+                      .pagedl dt{ min-width:60px;width:auto; height:30px;float:left; text-align:center;line-height:23px;}
+                      .pagedl dt a {  font-size:12px;text-decoration:none;}
+                      .pagedl dt a:hover {background:none;color:#666; }
+                      .pagedl dd{ width:25px; height:30px;float:left; text-align:center;}
+                      .pagedl dd a { display:block; text-decoration:none;text-align:center;}
+                      .pagedl dd a:hover { width:auto;color:#666;color:#080D8A; display:block; background-color:#0066CC; no-repeat center;}
+                      .pagedl dd .curpage { width:auto;color:#080D8A; display:block; background-color:#0066CC; no-repeat center;}
+                      .pagedl dd a.next { font-size: 12px;  padding-right: 18px; background-color:#0066CC; no-repeat right 0;}
+                      .pagedl dd a.next:hover { color: #1a4ea3; background-position: right -24px;;}
+                      .pagedl dd a.pre {  background-color:#0066CC; no-repeat;  }
+                      .pagedl dd a.pre:hover {  background-position: 0 -24px;}
+                      </style>
+                      <dl class="pagedl">
+                      {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+                      </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="prolist-right_list">
+                <div class="prolist-right_groom">
+                    <h3 class="prolist-right_commont_title">产品推荐</h3>
+                    <div class="prolist-right_groom_content">
+                        <!-- Swiper -->
+                        <div class="swiper_content_area swiper-container">
+                            <div class="swiper-wrapper">
+                                {dede:arclist typeid='51,56,60,61,64,9' row='5' titlelen='60' orderby='rand'}
+                                <div class="swiper-slide">
+                                    <a href="[field:arcurl/]">
+                                        <img src="[field:litpic/]" alt="[field:fulltitle/]">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>[field:title/]</h3>
+                                                <p>[field:infos/]</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                {/dede:arclist}
+                            </div>
+                        </div>
+                        <!-- Swiper end-->
+                    </div>
+                </div>
+                <div class="prolist-right_new">
+                    <h3 class="prolist-right_commont_title">最新资讯<a href="../news/">更多></a></h3>
+                    <div class="prolist-right_new_content">
+                        <ul>
+                            {dede:arclist  typeid='4' titlelen='60'  row='5' isweight="Y" orderby='weight' orderway='desc'}
+                            <li>
+                             <em>[field:global runphp='yes' name=autoindex][/field:global]</em>
+                             <a href="[field:arcurl/]" >[field:title/]</a></li>
+                            {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prolist-download">
+        <div class="w960">
+            <div class="download-box fl">
+                <img src="/images/img16.jpg" width="138" height="138" class="fl" alt="资料下载">
+                <div class="intro">
+                     <a href="/download-cpsc/" class="tit">资料下载</a>
+                    <ul>
+                        {dede:channel typeid='18' type='son' row='6'}
+                <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+                {/dede:channel}             
+                    </ul>
+                </div>
+            </div>
+            <div class="download-box fr">
+                <img src="/images/img17.jpg" width="138" height="138" class="fl" alt="解决方案">
+                <div class="intro">
+                     <a href="/download-jjfa/" class="tit">解决方案</a>
+                    <ul>
+                        {dede:arclist typeid='26'  pagesize='6' titlelen='40'}
+                        <li><a href="[field:arcurl/]" >[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+{dede:include filename="footer.htm"/}
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+
+<script type="text/javascript" src="/js/jquery1.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<script src="/js/headsearch.js"></script>
+
+<script src="/js/swiper.min.js"></script>
+<script src="/js/main.js"></script>
+<link href="/css/skitter.styles.css" rel="stylesheet">
+<script src="/js/jquery.skitter.js"></script>
+<script src="/js/list_product3_base.js"></script>
+</body>
+</html>

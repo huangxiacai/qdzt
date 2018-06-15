@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" class="user_split_string" target="_blank">[field:title/]</a></li>

@@ -1,0 +1,1 @@
+<img src="[field.typeimg/]" alt="[field:typename/]" />

@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^ztmicro.com
+RewriteRule ^(.*)$ http://www.ztmicro.com/$1 [R=permanent,L]
+
+RewriteCond %{HTTP_HOST} ^qdzitn.com
+RewriteRule ^(.*)$ http://www.ztmicro.com/$1 [R=permanent,L]
+
+RewriteCond %{HTTP_HOST} ^www.qdzitn.com
+RewriteRule ^(.*)$ http://www.ztmicro.com/$1 [R=permanent,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://www.ztmicro.com/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} www.ztmicro.com [NC]
+RewriteCond %{REQUEST_URI} /index.html [NC]
+RewriteRule .* / [R=301,L]
+
+
+
+ErrorDocument 404 /404.html
+</IfModule>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css" rel="stylesheet" >
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+<link href="/css/about.css" rel="stylesheet" type="text/css" />
+{dede:include filename="headquote.htm"/}
+
+</head>
+<body class="about-body">
+<!--头部文件  -->
+{dede:include filename="head.htm"/}
+<!--头部文件end  -->
+    <div class="inside-wrap">
+    	<div class="inside-tips w960">
+			<h1>{dede:type}[field:typename/]{/dede:type}</h1>
+    		<p class="fz16">聚焦科技之美</p>
+    		<p>以高素质团队和专业设备打造业界领先的传感器、混合集成电路产品</p>
+    		<a href="/" class="link"><img src="/images/sign07.png" width="44" height="44" class="png"></a>
+    	</div>
+    	<div class="w960">
+    		<div class="about-top about-t">
+    			<ul>
+    				<li>
+    					<div class="title">
+    						<p><a href="/about-gy/" style="color:#fff;">关于智腾</a></p>
+    						<div class="line"></div>
+    					</div>
+    					<p><a href="/about-gy/" style="color:#fff;">{dede:sql sql='Select content,substring(content,1,90) as content from zt_arctype where id=12'}[field:content function='html2text(@me)'/]{/dede:sql}...</a></p>
+    					<a href="/about-gy/" class="more">更多</a>
+    				</li>
+    				<li class="se">
+    					<div class="title">
+    						<p><a href="/about-zlcl/">质量策略</a></p>
+    						<div class="line"></div>
+    					</div>
+    					<a href="/about-zlcl/"><img src="/images/img05.jpg" width="246" height="101" class="fl" alt="质量策略"></a>
+    					<a href="/about-zlcl/">积极倾听客户需求、精心构建产品质量、真诚提供满意服务...</a>
+    				</li>
+    				<li class="th">
+    					<div class="title">
+    						<p><a href="/about-qywh/">企业文化</a></p>
+    						<div class="line" style="top:64px;"> </div>
+    					</div>
+    					<a href="/about-qywh/">
+							<p class="fz18">智腾微电子文化建设</p>
+							<p>积极倾听客户需求、精心构建产品质量、真诚提供满意服务</p>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    		<div class="about-b">
+    			<div class="l">
+    				<div class="title">
+    					<a href="/about-qyry/">企业荣誉</a>
+    					<div class="line"></div>
+    				</div>
+    				<div class="about-netwrok" >
+    				</div>
+    			</div>
+                <div class="r">
+                    <div class="title">
+                        <a href="/contact/">联系我们</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="r-box l">
+                        <div class="sign">
+                            <a href="/contact/"><img src="/images/bg_sign15.png" width="165" height="135" alt="联系我们"></a>
+                            <div class="bg"></div>
+                        </div>
+                        
+                        <p class="blue"><a href="/contact/">086-0532-58717256</a></p>
+                    </div>
+                    <div class="r-box">
+                        <div class="sign">
+                            <a href="/contact-job/"><img src="/images/bg_sign16.png" width="165" height="135" alt="加入我们"></a>
+                            <div class="bg"></div>
+                        </div>
+                        <ul>
+                            <li><a href="/contact-job/">加入我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+{dede:include filename="footer.htm"/}
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/jquery1.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<script src="/js/headsearch.js"></script>
+<script src="/js/about_base.js"></script>
+</body>
+</html>

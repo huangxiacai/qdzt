@@ -1,0 +1,13 @@
+.w960.investor-main .l {
+    width: 620px;
+    height: 219px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.w960.investor-main .r {
+    width: 320px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

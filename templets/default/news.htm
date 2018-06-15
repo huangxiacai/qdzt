@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{dede:field.seotitle/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css" rel="stylesheet" >
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+<link href="/css/news.css" rel="stylesheet" type="text/css" />
+{dede:include filename="headquote.htm"/}
+
+</head>
+<body class="investor-body">
+    <!--头部文件  -->
+{dede:include filename="head.htm"/}
+   <!--头部文件end  -->
+    <div class="inside-wrap">
+    	<div class="inside-tips w960">
+			<h1>新闻资讯</h1>
+    		<p class="fz16">聚焦科技之美</p>
+    		<p>实施名配角战略，成为全球领先的综合光学产品制造企业。 </p>
+    		<a href="/" class="link"><img src="/images/sign07.png" width="44" height="44" class="png"></a>
+            <a href="/contact/" class="mail">
+                <img src="/images/sign11.png" width="44" height="44" class="fl" alt="联系智腾">
+                <p>联系智腾</p>
+            </a>
+           <a href="/contact-job/" class="download" style="width:60px;">
+                <img src="/images/sign21.png" width="44" height="44" class="fl" alt="加入我们">
+                <p>加入我们</p>
+            </a>
+    	</div>
+    	<div class="w960 investor-main">
+            <div class="investor-th">
+                <div class="l" style="height:206px;">
+                    <div class="newsletters-box">
+                        <div class="title">
+                            <a href="/news-gs/">新闻资讯</a>
+                            <div class="line"><div class="line-in"></div></div>
+                        </div>
+                        <a href="/news-gs/" class="more">更多</a>
+                    </div>
+                    <div class="government-box">
+                        <div class="title">
+                            <a href="/news-zyhd/">公司新闻</a>
+                            <div class="line"><div class="line-in"></div></div>
+                        </div>
+                        <div class="list">
+                            <ul>
+							{dede:arclist  typeid='19' titlelen='25'  row='6'}
+                            <li><a href="[field:arcurl/]" target="blank">[field:title/]</a></li>
+							{/dede:arclist}
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r" style="height:206px;">
+                    <div class="news-box" style="height:206px;">
+                        <div class="title">
+                            <a href="/news-hyzx/">行业资讯</a>
+                            <div class="line"><div class="line-in"></div></div>
+                        </div>
+                        <div class="list">
+                         	<ul>
+							{dede:arclist  typeid='23' titlelen='32'  row='3'}
+                            <li><a href="[field:arcurl/]" target="blank">[field:title/]</a><span>[field:pubdate function="MyDate('Y.m',@me)"/]</span></li>
+							{/dede:arclist}
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="investor-fo">
+                <div class="l">
+                    <ul>
+                        <li>
+                            <a href="/news-jszs/">
+                                <div class="sign">
+                                    <img src="/images/sign12.png" alt="技术知识">
+                                    <div class="bg"></div>
+                                </div>
+                                <p>技术知识</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news-jplw/">
+                                <div class="sign">
+                                    <img src="/images/sign13.png" alt="精品论文">
+                                    <div class="bg"></div>
+                                </div>
+                                <p>精品论文</p>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="/news-gs/">
+                                <div class="sign">
+                                    <img src="/images/sign14.png" alt="公司新闻">
+                                    <div class="bg"></div>
+                                </div>
+                                <p>公司新闻</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="r" style="height:214px;">
+                    <div class="news-box" style="height:214px;">
+                        <div class="title">
+                            <a href="/news-zyhd/">重要活动</a>
+                            <div class="line"><div class="line-in"></div></div>
+                        </div>
+                        <div class="intro-box">
+							{dede:arclist  typeid='20'  infolen='100'  titlelen='42'  row='1'}
+                            <a href="[field:arcurl/]"><div style="font-size:14px; font-weight:bold;">[field:title/]</div>[field:info/]...</a>
+							{/dede:arclist}	
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    	</div>
+    </div>
+{dede:include filename="footer.htm"/}
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/jquery1.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<script src="/js/headsearch.js"></script>
+<script src="/js/news_base.js"></script>
+<script src="/js/loadeffect.js"></script>
+</body>
+</html>

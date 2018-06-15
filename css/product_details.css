@@ -1,0 +1,34 @@
+.tab-list li{
+	width:191px;
+}
+.tab-box{
+	width:769px;
+	min-height: 718px;
+}
+.tab-boxs.tab-download ul{
+	width:769px;
+}
+.tab-boxs.tab-download li{
+	width: 322px;
+    height: 97px;
+    padding: 19px;
+    border: 1px solid #e5e5e5;
+    float: left;
+    margin: 0 22px 16px 0;
+    display: inline;
+    background: #f8f8f8;
+}
+.tab-boxs.tab-contact .intro{
+	width: 285px;
+    padding-bottom: 10px;
+    float: left;
+    border-right: 1px solid #cfcfcf;
+    font-size: 14px;
+    line-height: 30px;
+}
+.proinfo-tab .tab-boxs{
+    width:100%;
+}
+table{
+    width: 100%!important;
+}

@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("arclist","<div class=\"dd\"><a href=\"[field:arcurl/]\" class=\"user_split_string\"  target=\"_blank\">[field:title/]</a></div>",2854,3026);
+$z[0][4]['typeid']="6";
+$z[0][4]['titlelen']="30";
+$z[0][4]['row']="16";
+$z[1]=Array("arclist","<div class=\"dd\"><a href=\"[field:arcurl/]\" class=\"user_split_string\"  target=\"_blank\">[field:title/]</a></div>",3320,3491);
+$z[1][4]['typeid']="8";
+$z[1][4]['titlelen']="30";
+$z[1][4]['row']="8";
+$z[2]=Array("arclist","<div class=\"dd\"><a href=\"[field:arcurl/]\" class=\"user_split_string\" target=\"_blank\">[field:title/]</a></div>",3698,3868);
+$z[2][4]['typeid']="7";
+$z[2][4]['titlelen']="30";
+$z[2][4]['row']="8";
+$z[3]=Array("arclist","<div class=\"dd\"><a href=\"[field:arcurl/]\" class=\"user_split_string\" target=\"_blank\">[field:title/]</a></div>",4164,4335);
+$z[3][4]['typeid']="9";
+$z[3][4]['titlelen']="30";
+$z[3][4]['row']="16";
+$z[4]=Array("arclist","<div class=\"dd\"><a href=\"[field:arcurl/]\" class=\"user_split_string\" target=\"_blank\">[field:title/]</a></div>",4642,4814);
+$z[4][4]['typeid']="11";
+$z[4][4]['titlelen']="30";
+$z[4][4]['row']="16";
+$z[5]=Array("channel","<li><a href='[field:typeurl/]'  target=\"_blank\">[field:typename/]</a></li>",5969,6094);
+$z[5][4]['typeid']="2";
+$z[5][4]['type']="son";
+$z[6]=Array("channel","<li><a href='[field:typeurl/]'  target=\"_blank\">[field:typename/]</a></li>",7716,7842);
+$z[6][4]['typeid']="18";
+$z[6][4]['type']="son";
+$z[7]=Array("arclist","\r\n                                    <a href=\"[field:arcurl/]\" class=\"tit\" target=\"_blank\">[field:title/]</a>\r\n                                    <p>[field:info/]...</p>\r\n                                    <span>[field:pubdate function=\"MyDate('Y.m',@me)\"/]</span>\r\n                                    ",8470,8853);
+$z[7][4]['typeid']="17";
+$z[7][4]['titlelen']="30";
+$z[7][4]['infolen']="60";
+$z[7][4]['row']="1";
+$z[8]=Array("channel","<li><a href='[field:typeurl/]'  target=\"_blank\">[field:typename/]</a></li>",9464,9589);
+$z[8][4]['typeid']="4";
+$z[8][4]['type']="son";
+$z[9]=Array("arclist","\r\n                                    <a href=\"[field:arcurl/]\" class=\"tit\" target=\"_blank\">[field:title/]</a>\r\n                                    <a href=\"[field:arcurl/]\" target=\"_blank\">[field:info/]...</a>\r\n                                    <span>[field:pubdate function=\"MyDate('Y.m',@me)\"/]</span>\r\n                                ",10088,10505);
+$z[9][4]['typeid']="4";
+$z[9][4]['titlelen']="30";
+$z[9][4]['infolen']="60";
+$z[9][4]['row']="1";
+
+?>

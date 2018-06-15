@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{dede:field.shorttitle /}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="/css/reset.css" rel="stylesheet" >
+<link href="/css/bcstyle.css" rel="stylesheet" >
+<link href="/css/swiper.min.css" rel="stylesheet" type="text/css" />
+<link href="/css/lrtk.css" rel="stylesheet" type="text/css" />
+<link href="/css/skitter.styles.css" rel="stylesheet" />
+<link href="/css/product_details.css?v=26" rel="stylesheet" />
+<style>
+html,body{
+    position: relative;
+}
+</style>
+</head>
+<body class="products-body">
+<!--头部文件  -->
+{dede:include filename="head.htm"/}
+<!--头部文件end  -->
+    <div class="inside-wrap">
+        <div class="inside-tips w960">
+            <h2>{dede:type}[field:typename/]{/dede:type}</h2>
+            <p class="fz16">聚焦科技之美</p>
+            <p>通过坚持国际化道路和名配角战略，做强、做大、走远，成为微电子行业的百年老字号。 </p>
+            <a href="{dede:type typeid='0' row=1}[field:typelink /]{/dede:type}" class="link link-inside"><img src="/images/sign09.png" width="44" height="44" class="png"></a>
+        </div>
+        <div class="path">
+            <div class="w960">
+                <h1 class="fl user_split_string">{dede:field.title /}</h1>
+                <p class="fr">
+                <a href="/" class="home"> </a><span class="sign"></span>{dede:field name='position'/}
+                <a href="#" class="user_split_string">{dede:field.title /}</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="inside-main honor-wrap">
+            <div class="w960">
+                <div class="honor-img">
+                    <div class="btn prev"><img src="/images/prev03.png"></div>
+                    <div class="btn next"><img src="/images/next03.png"></div>
+                    <div class="img"><img src="{dede:field.picname runphp='var_dmp(@me)' /}" width="635" hight=“444” alt=""></div>
+                </div>
+                
+                
+        <div class="proinfo-tab">
+            <div class="prolist-left_main w960">
+                <div class="tab-list">
+                    <ul>
+                        <li class="on">产品介绍</li>
+                        <li>技术规格</li>
+                        <li>相关产品</li>
+                        <li>销售联系</li>
+                    </ul>
+                </div>
+                <div class="tab-box">
+                    <div class="tab-boxs tab-intro" style="line-height:25px;display:block">
+                        <div class="intro">
+                            <p class="pl20">{dede:field.body/}<br /> <br /> </p>
+                        </div>
+                    </div>
+                    <div class="tab-boxs tab-table">{dede:field.jsgg/}</div>
+                    <div class="tab-boxs tab-download">
+                        <ul>
+                        {dede:arclist pagesize='6'  titlelen='40'}
+                            <li>
+                                <a href="[field:arcurl/]" >
+                                    <div class="intro">
+                                        <p>[field:title/]</p>
+                                        <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+                                        <div class="sign"><div class="t"><img src="[field:litpic/]"></div>
+                                            <div class="d"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            {/dede:arclist}
+                        </ul>
+                    </div>
+                    <div class="tab-boxs tab-contact">
+                        <div class="intro">
+                            {dede:global.cfg_protel/}
+                        </div>
+                        <div class="r">
+                            <img src="/images/img21.jpg" width="302" height="201" class="fl" alt="联系我们">
+                            <div class="tips">
+                                <p>联系智腾</p>
+                                <p class="en">Contact Us</p>
+                                <a href="/contact/" target="_blank">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="turn">
+                    <div class="bdsharebuttonbox">
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    </div>
+                    <script>
+                    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                    </script>
+                    <div class="turn-main">
+                        <p>{dede:prenext get='pre'/}</p>
+                        <p>{dede:prenext get='next'/}</p>
+                        <a href="{dede:type typeid='0' row=1}[field:typelink /]{/dede:type}" class="back">返回</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prolist-right_list">
+                <div class="prolist-right_groom">
+                    <h3 class="prolist-right_commont_title">产品推荐</h3>
+                    <div class="prolist-right_groom_content">
+                        <!-- Swiper -->
+                        <div class="swiper_content_area swiper-container">
+                            <div class="swiper-wrapper">
+                                {dede:arclist typeid='51,56,60,61,64,9' row='5' titlelen='60' orderby='rand'}
+                                <div class="swiper-slide">
+                                    <a href="[field:arcurl/]">
+                                        <img src="[field:litpic/]" alt="[field:fulltitle/]">
+                                        <div class="swiper_content_text">
+                                            <div class="swiper_text_inner">
+                                                <h3>[field:title/]</h3>
+                                                <p>[field:infos/]</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                {/dede:arclist}
+                            </div>
+                        </div>
+                        <!-- Swiper end-->
+                    </div>
+                </div>
+                <div class="prolist-right_new">
+                    <h3 class="prolist-right_commont_title">最新资讯<a href="../news/">更多></a></h3>
+                    <div class="prolist-right_new_content">
+                        <ul>
+                            {dede:arclist  typeid='4' titlelen='60'  row='5' isweight="Y" orderby='weight' orderway='desc'}
+                            <li>
+                             <em>[field:global runphp='yes' name=autoindex][/field:global]</em>
+                             <a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                            {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+{dede:include filename="footer.htm"/}
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/insertflash.js"></script>
+<script type="text/javascript" src="/js/popwin.js"></script>
+<script type="text/javascript" src="/js/imgshow.js"></script>
+<script src="/js/swiper.min.js"></script>
+<script src='/js/article_product_base.js?v=27'></script>
+<script src="/js/scroll_proinfo.js"></script>
+
+<script src="/js/jquery.skitter.js"></script>
+<script src="/js/swiper.min.js"></script>
+<script src="/js/main.js?v=22"></script>
+<script src="/js/headsearch.js"></script>
+</body>
+</html>
